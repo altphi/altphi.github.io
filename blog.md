@@ -1,5 +1,12 @@
 # log
 
+### 2019-06-06
+
+<!-- #SICP -->
+* Normal Order is lazy. Applicative Order isn't. [SICP](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-10.html#%_sec_1.1.5)  
+
+* > Without requirements or design, programming is the art of adding bugs to an empty text file. - Louis Srygley [@CodeWisdom](https://twitter.com/CodeWisdom/status/1136612954546352128)
+
 ### 2019-06-05
 * Is there a word for something that increases by the same amount any time it does increase?  I couldn't find one.  I feel like the Latin `accresco` should be in the mix.
 
