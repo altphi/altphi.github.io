@@ -1,5 +1,18 @@
 # log
 
+### 2019-06-26
+* *within due limits*...
+    > This Vatican Council declares that the human person has a right to religious freedom. This freedom means that all men are to be immune from coercion on the part of individuals or of social groups and of any human power, in such wise that no one is to be forced to act in a manner contrary to his own beliefs, whether privately or publicly, whether alone or in association with others, within due limits.  [§§](http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651207_dignitatis-humanae_en.html)
+
+### 2019-06-25
+
+* > Two of the primitive operations, car and cdr, take their names from operations on the IBM 704. car is the "contents of the address part of the register", while cdr is the "contents of the decrement part of the register", he said. [§§](https://lwn.net/Articles/778550/)
+* > The syntax of Lisp is inspired by the "Lambda calculus" notation that was developed by Alonzo Church in the 1930s. Both are based on the idea that any kind of computation can be expressed as function applications. [§§](https://lwn.net/Articles/778550/)
+
+### 2019-06-17
+
+* (JetBrains/Android Studio IDE tip) To show all the exit points of a function, place cursor on a return and hit shift-cmd-F7.
+
 ### 2019-06-07
 
 * The Hepburn Method A (for Powerlifting) via [this book](https://books.google.com/books?id=-2DpuQEACAAJ)
