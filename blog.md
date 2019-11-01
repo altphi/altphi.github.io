@@ -1,5 +1,19 @@
 # log
 
+### 14
+
+> Aischulos' bronze-throat eagle-bark at blood / Has somehow spoiled my taste for twitterings! Robert Browning [Robert Browning, Aristophanes' Apology, 94](http://j.mp/1dlqg02)
+
+### 13
+
+> Kirk, along with Eliot, Christopher Dawson, and others, tells us that ideology is a secular substitute for religion and that it demands religious assent to its doctrines. In the name of freedom, ideology brings servitude. All this is most obvious in the Communist and Fascist ideologies, but Kirk maintains that it is true of the softened versions of our modern progressives as well. [Enemies of the Permanent Things](http://www.theimaginativeconservative.org/2018/01/enemies-permanent-things-russell-kirk-bejamin-lockerd.html)
+
+### 12
+
+> _magistri dum docent, discunt_
+
+> As the teachers teach, they learn.
+
 ### 11
 
 > If only it were all so simple! If only there were evil people somewhere insidiously committing evil deeds, and it were necessary only to separate them from the rest of us and destroy them. But the line dividing good and evil cuts through the heart of every human being. And who is willing to destroy a piece of his own heart?
