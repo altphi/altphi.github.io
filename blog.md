@@ -1,5 +1,20 @@
 # log
 
+### 11
+> If only it were all so simple! If only there were evil people somewhere insidiously committing evil deeds, and it were necessary only to separate them from the rest of us and destroy them. But the line dividing good and evil cuts through the heart of every human being. And who is willing to destroy a piece of his own heart?
+
+> During the life of any heart this line keeps changing place; sometimes it is squeezed one way by exuberant evil and sometimes it shifts to allow enough space for good to flourish. One and the same human being is, at various ages, under various circumstances, a totally different human being. At times he is close to being a devil, at times to sainthood. But his name doesn't change, and to that name we ascribe the whole lot, good and evil.
+
+> Socrates taught us: Know thyself!
+
+Aleksandr Solzhenitsyn (tr. Whitney), Gulag Archipelago. Harper & Row 1973. vol. 1 p. 168
+
+### 10
+
+> It will do the world no good, hereafter, if you merely exist, and pass life smoothly or roughly; but to have thoughts, and write them down, that helps greatly.
+
+https://sententiaeantiquae.com/2018/03/12/to-have-thoughts-and-write-them-down
+
 ### 9
 *[Alan Perlis' Epigrams](http://www.cs.yale.edu/homes/perlis-alan/quotes.html)
 

@@ -1,9 +1,9 @@
 # Stringfellow Barr
 
 # Liberal Education
-Stringfellow Barr's Ideal Johnnie http://j.mp/1dH3IEC
+Stringfellow Barr's Ideal Johnnie
 
-** Stringfellow Bar via Christopher Nelson http://j.mp/16oP85e **
+** Stringfellow Bar via Christopher Nelson 
 
 > He will be able to think clearly and imaginatively, to read even difficult material with understanding and delight, to write well and to the purpose. For four years he will have consorted with great minds and shared their problems with growing understanding. He will be able to distinguish sharply between what he knows and what is merely his opinion. From his constant association with the first-rate, he will have acquired a distaste for the second-rate, the intellectually cheap and tawdry; but he will have learned to discover meaning in things that most people write off as vulgar. He will get genuine pleasure from using his mind on difficult problems. He is likely to be humorous; he will certainly not be literal-minded. . . .
 
@@ -34,11 +34,11 @@ date: 2013-08-27
 # #Grace #Charis
 Pindar, Olympian 1.30-34 http://j.mp/1dc0NqE
 
->  Χάρις δ’, ἅπερ ἅπαντα τεύχει τὰ μείλιχα θνατοῖς
-ἐπιφέροισα τιμὰν καὶ ἄπιστον ἐμήσατο πιστόν
-ἔμμεναι τὸ πολλάκις·
-ἁμέραι δ’ ἐπίλοιποι
-μάρτυρες σοφώτατοι.
+> Χάρις δ’, ἅπερ ἅπαντα τεύχει τὰ μείλιχα θνατοῖς
+> ἐπιφέροισα τιμὰν καὶ ἄπιστον ἐμήσατο πιστόν
+> ἔμμεναι τὸ πολλάκις·
+> ἁμέραι δ’ ἐπίλοιποι
+> μάρτυρες σοφώτατοι.
 
 > For Charis, who fashions all things pleasant for mortals
 by bestowing honor makes even what is unbelievable
