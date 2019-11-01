@@ -12,13 +12,11 @@ Aleksandr Solzhenitsyn (tr. Whitney), Gulag Archipelago. Harper & Row 1973. vol.
 
 ### 10
 
-> It will do the world no good, hereafter, if you merely exist, and pass life smoothly or roughly; but to have thoughts, and write them down, that helps greatly.
-
-https://sententiaeantiquae.com/2018/03/12/to-have-thoughts-and-write-them-down
+> It will do the world no good, hereafter, if you merely exist, and pass life smoothly or roughly; but to have thoughts, and write them down, that helps greatly. [§§](https://sententiaeantiquae.com/2018/03/12/to-have-thoughts-and-write-them-down)
 
 ### 9
 
-*[Alan Perlis' Epigrams](http://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+* [Alan Perlis' Epigrams](http://www.cs.yale.edu/homes/perlis-alan/quotes.html)
 
 ### 8
 
