@@ -1,4 +1,45 @@
 # log
+<!-- [@altphi](http://twitter.com/altphi) -->
+
+### 18
+
+Absolute power corrupts absolutely.
+Concentrating power over time leads to absolute power.
+Progressivism, however noble its intentions, concentrates power over time.
+Therefore...
+
+
+### 17
+
+> Daniel 3
+> 83 Bénedic, Israel, Dómino,
+>   laudáte et superexaltáte eum in sǽcula.
+> 84 Benedícite, sacerdótes Dómini, Dómino,
+>   benedícite, servi Dómini, Dómino.
+> 86 Benedícite, spíritus et ánimæ iustórum, Dómino,
+>   benedícite, sancti et húmiles corde, Dómino.
+> 88 Benedícite, Ananía, Azaría, Mísael, Dómino,
+>   laudáte et superexaltáte eum in sǽcula.
+
+I wonder if, in the above verses, Daniel is invoking the prayers of the dead.
+in 83, Israel is singular (i.e. Jacob) is commanded to bless the Lord.
+in 86, the spirits and souls of the just are commanded to bless the Lord.
+in 88, Shadrach, Meshach, and Abednego are commanded to praise and exalt him for eternity (in saecula).
+
+
+### 16
+> As late as the seventeenth century the savants and artists of all Europe were so closely united by the bond of a common ideal that cooperation between them was scarcely affected by political events. This unity was further strengthened by the general use of the Latin language.  
+  
+> Today we look back at this state of affairs as at a lost paradise.  The passions of nationalism have destroyed this community of the intellect, and the Latin language which once united the whole world is dead. The men of learning have become representatives of the most extreme national traditions and lost their sense of an intellectual commonwealth.
+  
+> Nowadays we are faced with the dismaying fact that the politicians, the practical men of affairs, have become the exponents of international ideas. It is they who have created the League of Nations.
+
+Einstein (1954) _Ideas and Opinions_. 1.
+<div class="fb-comments" data-href="http://log.j38.uk/#16" data-width="" data-numposts="2"></div>
+
+### 15
+
+* [Andy Baker • Short Guide to Intermediate Programming](https://www.andybaker.com/short-guide-to-intermediate-programming/)
 
 ### 14
 
