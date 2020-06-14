@@ -12,19 +12,19 @@ Therefore...
 ### 17
 
 > Daniel 3
-> 83 Bénedic, Israel, Dómino,
->   laudáte et superexaltáte eum in sǽcula.
-> 84 Benedícite, sacerdótes Dómini, Dómino,
->   benedícite, servi Dómini, Dómino.
-> 86 Benedícite, spíritus et ánimæ iustórum, Dómino,
->   benedícite, sancti et húmiles corde, Dómino.
-> 88 Benedícite, Ananía, Azaría, Mísael, Dómino,
->   laudáte et superexaltáte eum in sǽcula.
+> 83 Bénedic, Israel, Dómino,  
+>   laudáte et superexaltáte eum in sǽcula.  
+> 84 Benedícite, sacerdótes Dómini, Dómino,  
+>   benedícite, servi Dómini, Dómino.  
+> 86 Benedícite, spíritus et ánimæ iustórum, Dómino,  
+>   benedícite, sancti et húmiles corde, Dómino.  
+> 88 Benedícite, Ananía, Azaría, Mísael, Dómino,  
+>   laudáte et superexaltáte eum in sǽcula.  
 
-I wonder if, in the above verses, Daniel is invoking the prayers of the dead.
-in 83, Israel is singular (i.e. Jacob) is commanded to bless the Lord.
-in 86, the spirits and souls of the just are commanded to bless the Lord.
-in 88, Shadrach, Meshach, and Abednego are commanded to praise and exalt him for eternity (in saecula).
+I wonder if, in the above verses, Daniel is invoking the prayers of the dead.  
+in 83, Israel is singular (i.e. Jacob) is commanded to bless the Lord.  
+in 86, the spirits and souls of the just are commanded to bless the Lord.  
+in 88, Shadrach, Meshach, and Abednego are commanded to praise and exalt him for eternity (in saecula).  
 
 
 ### 16
@@ -70,28 +70,30 @@ Aleksandr Solzhenitsyn (tr. Whitney), Gulag Archipelago. Harper & Row 1973. vol.
 
 ### 9
 
-* [Alan Perlis' Epigrams](http://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+[Alan Perlis' Epigrams](http://www.cs.yale.edu/homes/perlis-alan/quotes.html)
 
 ### 8
 
-* The [168 best classical music recordings](http://www.telegraph.co.uk/music/classical-music/best-classical-recordings/)
+The [168 best classical music recordings](http://www.telegraph.co.uk/music/classical-music/best-classical-recordings/)
 
 ### 7
-* One cannot use [Picasso](https://square.github.io/picasso/) to load an image already in memory (but not written to disk).
+
+One cannot use [Picasso](https://square.github.io/picasso/) to load an image already in memory (but not written to disk).
 
 ### 6
 
-* *within due limits*...
-    > This Vatican Council declares that the human person has a right to religious freedom. This freedom means that all men are to be immune from coercion on the part of individuals or of social groups and of any human power, in such wise that no one is to be forced to act in a manner contrary to his own beliefs, whether privately or publicly, whether alone or in association with others, within due limits.  [§§](http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651207_dignitatis-humanae_en.html)
+*within due limits*...
+> This Vatican Council declares that the human person has a right to religious freedom. This freedom means that all men are to be immune from coercion on the part of individuals or of social groups and of any human power, in such wise that no one is to be forced to act in a manner contrary to his own beliefs, whether privately or publicly, whether alone or in association with others, within due limits.  [§§](http://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651207_dignitatis-humanae_en.html)
 
 ### 5
 
-* > Two of the primitive operations, car and cdr, take their names from operations on the IBM 704. car is the "contents of the address part of the register", while cdr is the "contents of the decrement part of the register", he said. [§§](https://lwn.net/Articles/778550/)
-* > The syntax of Lisp is inspired by the "Lambda calculus" notation that was developed by Alonzo Church in the 1930s. Both are based on the idea that any kind of computation can be expressed as function applications. [§§](https://lwn.net/Articles/778550/)
+> Two of the primitive operations, car and cdr, take their names from operations on the IBM 704. car is the "contents of the address part of the register", while cdr is the "contents of the decrement part of the register", he said. [§§](https://lwn.net/Articles/778550/)
+
+> The syntax of Lisp is inspired by the "Lambda calculus" notation that was developed by Alonzo Church in the 1930s. Both are based on the idea that any kind of computation can be expressed as function applications. [§§](https://lwn.net/Articles/778550/)
 
 ### 4
 
-* (JetBrains/Android Studio IDE tip) To show all the exit points of a function, place cursor on a return and hit shift-cmd-F7.
+(JetBrains/Android Studio IDE tip) To show all the exit points of a function, place cursor on a return and hit shift-cmd-F7.
 
 ### 3 
 
@@ -115,17 +117,18 @@ Aleksandr Solzhenitsyn (tr. Whitney), Gulag Archipelago. Harper & Row 1973. vol.
 ### 2 
 <!-- #SICP -->
 
-* Normal Order is lazy. Applicative Order isn't. [SICP](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-10.html#%_sec_1.1.5)  
+Normal Order is lazy. Applicative Order isn't. [SICP](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-10.html#%_sec_1.1.5)  
 
-* > Without requirements or design, programming is the art of adding bugs to an empty text file. - Louis Srygley [@CodeWisdom](https://twitter.com/CodeWisdom/status/1136612954546352128)
+> Without requirements or design, programming is the art of adding bugs to an empty text file. - Louis Srygley [@CodeWisdom](https://twitter.com/CodeWisdom/status/1136612954546352128)
 
-### 1 
-* Is there a word for something that increases by the same amount any time it does increase?  I couldn't find one.  I feel like the Latin `accresco` should be in the mix.
+### 1
 
-* I like blogs that don't show up in feeds.  The reader has to get to it actively, not passively through a beep or a feed.  It seems slighly more personal this way.
+Is there a word for something that increases by the same amount any time it does increase?  I couldn't find one.  I feel like the Latin `accresco` should be in the mix.
 
-* I also like blogs unadorned, even plain text (though not many sites like that are blogs in the sense of a periodic journal online, more often collections of longer writings).  This brings more attention to content, less to style.
+I like blogs that don't show up in feeds.  The reader has to get to it actively, not passively through a beep or a feed.  It seems slighly more personal this way.
 
-* New word today: `jape`, v. 'to jest or mock' or n. 'a practical joke'
+I also like blogs unadorned, even plain text (though not many sites like that are blogs in the sense of a periodic journal online, more often collections of longer writings).  This brings more attention to content, less to style.
 
-* This is sort of a first post after a very long hiatus. 
+New word today: `jape`, v. 'to jest or mock' or n. 'a practical joke'
+
+This is sort of a first post after a very long hiatus. 
