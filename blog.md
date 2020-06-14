@@ -35,7 +35,6 @@ in 88, Shadrach, Meshach, and Abednego are commanded to praise and exalt him for
 > Nowadays we are faced with the dismaying fact that the politicians, the practical men of affairs, have become the exponents of international ideas. It is they who have created the League of Nations.
 
 Einstein (1954) _Ideas and Opinions_. 1.
-<div class="fb-comments" data-href="http://log.j38.uk/#16" data-width="" data-numposts="2"></div>
 
 ### 15
 
