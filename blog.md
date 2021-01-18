@@ -8,6 +8,7 @@ Concentrating power over time leads to absolute power.
 Progressivism, however noble its intentions, concentrates power over time.
 Therefore...
 
+<a href="https://twitter.com/intent/tweet?screen_name=altphi">Comment @altphi</a>
 
 ### 17
 
