@@ -1,5 +1,6 @@
 # log
 <!-- [@altphi](http://twitter.com/altphi) -->
+This is sort of a blog, and sort of not.
 
 ### 18
 
