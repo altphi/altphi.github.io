@@ -132,5 +132,3 @@ I like blogs that don't show up in feeds.  The reader has to get to it actively,
 I also like blogs unadorned, even plain text (though not many sites like that are blogs in the sense of a periodic journal online, more often collections of longer writings).  This brings more attention to content, less to style.
 
 New word today: `jape`, v. 'to jest or mock' or n. 'a practical joke'
-
-This is sort of a first post after a very long hiatus. 
