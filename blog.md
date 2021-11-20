@@ -1,7 +1,6 @@
-# little notes for occasional reference
+# little notes for occasional reference  
 
-[@altphi](http://twitter.com/altphi)
-
+<!-- ([altphi](http://twitter.com/altphi)) -->
 
 ### 19
 For one who already knows Latin and needs to learn French, [Arnold's First French Book](https://archive.org/details/firstfrenchbook01arnogoog/page/n4/mode/2up) is a great resource.
