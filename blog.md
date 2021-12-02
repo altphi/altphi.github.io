@@ -1,6 +1,68 @@
-# little notes for occasional reference  
-
+# notes for occasional reference  
 <!-- ([altphi](http://twitter.com/altphi)) -->
+
+### 20
+Litany of Humility by Rafael Cardinal Merry del Val
+
+> O Jesus, meek and humble of heart,  
+> Make my heart like yours.  
+> From self-will, deliver me, O Lord.  
+> From the desire of being esteemed, deliver me, O Lord.  
+> From the desire of being loved, deliver me, O Lord.  
+> From the desire of being extolled, deliver me, O Lord.  
+> From the desire of being honored, deliver me, O Lord.  
+> From the desire of being praised, deliver me, O Lord.  
+> From the desire of being preferred to others, deliver me, O Lord.  
+> From the desire of being consulted, deliver me, O Lord.  
+> From the desire of being approved, deliver me, O Lord.  
+> From the desire to be understood, deliver me, O Lord.  
+> From the desire to be visited, deliver me, O Lord.  
+> From the fear of being humiliated, deliver me, O Lord.  
+> From the fear of being despised, deliver me, O Lord.  
+> From the fear of suffering rebukes, deliver me, O Lord.  
+> From the fear of being calumniated, deliver me, O Lord.  
+> From the fear of being forgotten, deliver me, O Lord.  
+> From the fear of being ridiculed, deliver me, O Lord.  
+> From the fear of being suspected, deliver me, O Lord.  
+> From the fear of being wronged, deliver me, O Lord.  
+> From the fear of being abandoned, deliver me, O Lord.  
+> From the fear of being refused, deliver me, O Lord.  
+> That others may be loved more than I,  
+> Lord, grant me the grace to desire it.  
+> That others may be esteemed more than I,  
+> Lord, grant me the grace to desire it.  
+> That, in the opinion of the world, others may increase and I may decrease,  
+> Lord, grant me the grace to desire it.  
+> That others may be chosen and I set aside,  
+> Lord, grant me the grace to desire it.  
+> That others may be praised and I go unnoticed,  
+> Lord, grant me the grace to desire it.  
+> That others may be preferred to me in everything,  
+> Lord, grant me the grace to desire it.  
+> That others may become holier than I,  
+> provided that I may become as holy as I should,  
+> Lord, grant me the grace to desire it.  
+> At being unknown and poor,  
+> Lord, I want to rejoice.  
+> At being deprived of the natural perfections of body and mind,  
+> Lord, I want to rejoice.  
+> When people do not think of me,  
+> Lord, I want to rejoice.  
+> When they assign to me the meanest tasks,  
+> Lord, I want to rejoice.  
+> When they do not even deign to make use of me,  
+> Lord, I want to rejoice.  
+> When they never ask my opinion,  
+> Lord, I want to rejoice.  
+> When they leave me at the lowest place,  
+> Lord, I want to rejoice.  
+> When they never compliment me,  
+> Lord, I want to rejoice.  
+> When they blame me in season and out of season,  
+> Lord, I want to rejoice.  
+> Blessed are those who suffer persecution for justice’ sake,  
+> For theirs is the kingdom of heaven.  
+
 
 ### 19
 For one who already knows Latin and needs to learn French, [Arnold's First French Book](https://archive.org/details/firstfrenchbook01arnogoog/page/n4/mode/2up) is a great resource.
