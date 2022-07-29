@@ -1,5 +1,16 @@
-# notes for occasional reference  
+# notes and quotes  
 <!-- ([altphi](http://twitter.com/altphi)) -->
+
+### 21
+> some postliberals, borrowing from Catholic social teaching, emphasize solidarity – a mutual sympathy and responsibility that prioritizes our nearest neighbors but includes all creation – and subsidiarity – ceding the priority of decision-making to those closest to implementation – as foundational ideas for supporting the common good. Such ideas lead also to alternative structures: through membership in local community, we grow in our skills and personal identities as we recognize and act on our obligations to the welfare of others according to our relationships with them – parent, child, co-worker, neighbor, client, vendor. Through local action in concert with our communities and the natural world, we focus on who we are and what we are together creating rather than on what we are consuming.
+
+> A structural flaw evident in mature neoliberal societies built on autonomous, atomistic individuality is the loss of a coherent ordering of the one, the few, and the many, and, in particular, the loss of the middle, replaced by a large state, mediating, through force, rights issues between individuals. An example is the rise of what some call rentier capitalism, wealth accumulation from owning rather than from producing. Rentier capitalism is largely the outcome of the machinations of those with an oligopolic share of a market or with privileged access to the complex legal system of intellectual property rights. These structures form effective barriers to market entry by those who could otherwise contribute to society through their creativity.
+
+> ...three ways that producers are impeding repair: unreasonable repair fees coupled with low replacement costs, product design, and intellectual property (IP) law.
+
+
+
+via [this](https://www.frontporchrepublic.com/2022/07/seeking-restored-ideas-and-structures-a-review-of-the-right-to-repair/)
 
 ### 20
 Litany of Humility by Rafael Cardinal Merry del Val
