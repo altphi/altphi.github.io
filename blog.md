@@ -8,9 +8,8 @@
 
 > ...three ways that producers are impeding repair: unreasonable repair fees coupled with low replacement costs, product design, and intellectual property (IP) law.
 
-
-
 via [this](https://www.frontporchrepublic.com/2022/07/seeking-restored-ideas-and-structures-a-review-of-the-right-to-repair/)
+
 
 ### 20
 Litany of Humility by Rafael Cardinal Merry del Val
