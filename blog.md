@@ -1,6 +1,20 @@
 # notes and quotes  
 <!-- ([altphi](http://twitter.com/altphi)) -->
 
+### 23
+> The long journey from a medieval world wracked with suffering but pregnant with meaning has delivered us to a place of once unimaginable comfort but emptied of significance and connection.
+> ––
+> Dreher, 2017. The Benedict Option: A Strategy for Christians in a Post-Christian Nation. Sentinel, 46.
+
+### 22
+> Theodore Roosevelt – whose name was invoked yesterday by one speaker as a guiding light of a new “National Conservatism” – stated in his important 1910 speech, “The New Nationalism,” that “The New Nationalism puts the national need before sectional or personal advantage.” This is a refrain that was found throughout the writings of the Progressives, the need to move the loyalties and identities of Americans from their local places and people to a more abstract devotion to the nation and its ideals – coincident with the time in which America began to acquire an empire, and thought increasingly of itself as the embodiment of a universal idea that was unbounded, in theory and increasingly in fact, applicable everywhere. Indeed, a recent book, How to Hide an Empire, by the historian Daniel Immerwahr – notes that it was during this exact historical period when the word “America” began to be used to describe ourselves, replacing what had been the main self-description of our nation: the United States, more often than not, followed by the grammatically correct plural “are,” not the singular “is.”
+
+> ... Francis Bellamy, a Christian socialist, published “The Pledge of Allegiance,” with the hope and aim of aligning people’s loyalties and commitments to the nation and away from the parochial identities that had previously defined the identity of the citizens of the United States (the Bellamy salute, first practiced with the Pledge, was later adopted by the Nazis. Its wholly secular devotional was eventually corrected by the insertion of “under God” in 1954, the result of efforts especially by the Knights of Columbus).
+
+> We know since time immemorial that a flourishing life depends upon a deep and wide network of people of mutual care, commitment, and sacrifice. Yet the nation has at times, and too often, in American history, been embraced from a stance of hostility to the local, the communal, the particular, and, yes, against the family.
+
+via [this](https://www.frontporchrepublic.com/2019/08/the-perils-and-possibility-of-the-nation-for-the-future-of-conservatism/)
+
 ### 21
 > some postliberals, borrowing from Catholic social teaching, emphasize solidarity – a mutual sympathy and responsibility that prioritizes our nearest neighbors but includes all creation – and subsidiarity – ceding the priority of decision-making to those closest to implementation – as foundational ideas for supporting the common good. Such ideas lead also to alternative structures: through membership in local community, we grow in our skills and personal identities as we recognize and act on our obligations to the welfare of others according to our relationships with them – parent, child, co-worker, neighbor, client, vendor. Through local action in concert with our communities and the natural world, we focus on who we are and what we are together creating rather than on what we are consuming.
 
