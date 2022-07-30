@@ -4,9 +4,7 @@
 ### 23
 > The long journey from a medieval world wracked with suffering but pregnant with meaning has delivered us to a place of once unimaginable comfort but emptied of significance and connection.
 
-> ––
-
-> Dreher, 2017. The Benedict Option: A Strategy for Christians in a Post-Christian Nation. Sentinel, 46.
+–– Dreher, 2017. The Benedict Option: A Strategy for Christians in a Post-Christian Nation. Sentinel, 46.
 
 ### 22
 > Theodore Roosevelt – whose name was invoked yesterday by one speaker as a guiding light of a new “National Conservatism” – stated in his important 1910 speech, “The New Nationalism,” that “The New Nationalism puts the national need before sectional or personal advantage.” This is a refrain that was found throughout the writings of the Progressives, the need to move the loyalties and identities of Americans from their local places and people to a more abstract devotion to the nation and its ideals – coincident with the time in which America began to acquire an empire, and thought increasingly of itself as the embodiment of a universal idea that was unbounded, in theory and increasingly in fact, applicable everywhere. Indeed, a recent book, How to Hide an Empire, by the historian Daniel Immerwahr – notes that it was during this exact historical period when the word “America” began to be used to describe ourselves, replacing what had been the main self-description of our nation: the United States, more often than not, followed by the grammatically correct plural “are,” not the singular “is.”
