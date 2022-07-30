@@ -3,7 +3,9 @@
 
 ### 23
 > The long journey from a medieval world wracked with suffering but pregnant with meaning has delivered us to a place of once unimaginable comfort but emptied of significance and connection.
+
 > ––
+
 > Dreher, 2017. The Benedict Option: A Strategy for Christians in a Post-Christian Nation. Sentinel, 46.
 
 ### 22
