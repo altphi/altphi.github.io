@@ -1,6 +1,12 @@
 # notes and quotes  
 <!-- ([altphi](http://twitter.com/altphi)) -->
 
+### 24
+> A community is calling its very being into question when it suddenly declares that what until now was its holiest and highest possession is strictly forbidden and when it makes the longing for it seem downright indecent. Can it be trusted any more about anything else? Won’t it proscribe again tomorrow what it prescribes today?
+
+–– Ratzinger, Joseph.  Salt of the Earth: The Church at the End of the Millennium. 176.
+
+
 ### 23
 > The long journey from a medieval world wracked with suffering but pregnant with meaning has delivered us to a place of once unimaginable comfort but emptied of significance and connection.
 
