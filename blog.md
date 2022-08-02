@@ -1,6 +1,11 @@
 # notes and quotes  
 <!-- ([altphi](http://twitter.com/altphi)) -->
 
+### 26
+> I think if you were Satan and you were settin around tryin to think up somethin that would just bring the human race to its knees what you would probably come up with is narcotics.  Maybe he did.  I told that to somebody at breakfast the other mornin and they asked me if I believed in Satan.  I said Well that aint the point.  And they said I know but do you?  I had to think about that.  I guess as a boy I did.  Come the middle years my belief I reckon had waned somewhat.  Now I'm startin to lean back the other way.  He explains a lot of things that otherwise dont have no explanation.  Or not to me they dont.
+
+– Sheriff Bell in Cormac McCarthy's No Country for Old Men
+
 ### 25
 > It's a life's work to see yourself for what you really are and even then you might be wrong.
 
