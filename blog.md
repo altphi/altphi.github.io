@@ -1,6 +1,11 @@
 # notes and quotes  
 <!-- ([altphi](http://twitter.com/altphi)) -->
 
+### 25
+> It's a life's work to see yourself for what you really are and even then you might be wrong.
+
+– Sheriff Bell in Cormac McCarthy's No Country for Old Men
+
 ### 24
 > A community is calling its very being into question when it suddenly declares that what until now was its holiest and highest possession is strictly forbidden and when it makes the longing for it seem downright indecent. Can it be trusted any more about anything else? Won’t it proscribe again tomorrow what it prescribes today?
 
