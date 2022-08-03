@@ -1,6 +1,16 @@
 # notes and quotes  
 <!-- ([altphi](http://twitter.com/altphi)) -->
 
+### 28
+> Post-liberal thinkers such as Patrick Deneen... argue that many contemporary social ills are an effect of the way the liberal project cannibalises social goods, such as family life or religious faith, in order to pursue narrow metrics such as (on the Left) personal freedom or (on the Right) economic growth. Thiel sees many of the same ills as Deneen, but offers a strikingly different framing: we’re consuming ourselves not because the fixation on progress is inevitably self-destructive beyond a certain threshold, but because material progress has objectively stalled while we remain collectively in denial about this fact.
+
+via [this](https://unherd.com/2022/07/peter-thiel-on-the-dangers-of-progress/)
+
+### 27
+> Annuntiavérunt cæli iustítiam eius: et vidérunt omnes pópuli glóriam eius.
+
+– Psalm 96:6
+
 ### 26
 > I think if you were Satan and you were settin around tryin to think up somethin that would just bring the human race to its knees what you would probably come up with is narcotics.  Maybe he did.  I told that to somebody at breakfast the other mornin and they asked me if I believed in Satan.  I said Well that aint the point.  And they said I know but do you?  I had to think about that.  I guess as a boy I did.  Come the middle years my belief I reckon had waned somewhat.  Now I'm startin to lean back the other way.  He explains a lot of things that otherwise dont have no explanation.  Or not to me they dont.
 
