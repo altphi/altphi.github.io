@@ -1,5 +1,8 @@
-# notes and quotes  
+# notes and quotes
 <!-- ([altphi](http://twitter.com/altphi)) -->
+
+### 29
+<a href="/images/pond-orig.jpg" target=_blank><img src="/images/pond.jpg"/></a>
 
 ### 28
 > Post-liberal thinkers such as Patrick Deneen... argue that many contemporary social ills are an effect of the way the liberal project cannibalises social goods, such as family life or religious faith, in order to pursue narrow metrics such as (on the Left) personal freedom or (on the Right) economic growth. Thiel sees many of the same ills as Deneen, but offers a strikingly different framing: we’re consuming ourselves not because the fixation on progress is inevitably self-destructive beyond a certain threshold, but because material progress has objectively stalled while we remain collectively in denial about this fact.
@@ -212,7 +215,7 @@ One cannot use [Picasso](https://square.github.io/picasso/) to load an image alr
 
 (JetBrains/Android Studio IDE tip) To show all the exit points of a function, place cursor on a return and hit shift-cmd-F7.
 
-### 3 
+### 3
 
 * The Hepburn Method A (for Powerlifting) via [this book](https://books.google.com/books?id=-2DpuQEACAAJ)
   - For any primary lift (Squat, Bench, Deadlift, Overhead Press), find your 8 rep max weight. 
@@ -231,7 +234,7 @@ One cannot use [Picasso](https://square.github.io/picasso/) to load an image alr
   - For the pump phase, move from 6x3 to 6x5.  The bump and reset as usual.
 
 
-### 2 
+### 2
 <!-- #SICP -->
 
 Normal Order is lazy. Applicative Order isn't. [SICP](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-10.html#%_sec_1.1.5)  
