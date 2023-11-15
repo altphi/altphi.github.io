@@ -1,41 +1,41 @@
 # notes and quotes
 <!-- ([altphi](http://twitter.com/altphi)) -->
 
-### 29
+### 28
 <a href="/images/pond-orig.jpg" target=_blank><img src="/images/pond.jpg"/></a>
 
-### 28
+### 27
 > Post-liberal thinkers such as Patrick Deneen... argue that many contemporary social ills are an effect of the way the liberal project cannibalises social goods, such as family life or religious faith, in order to pursue narrow metrics such as (on the Left) personal freedom or (on the Right) economic growth. Thiel sees many of the same ills as Deneen, but offers a strikingly different framing: we’re consuming ourselves not because the fixation on progress is inevitably self-destructive beyond a certain threshold, but because material progress has objectively stalled while we remain collectively in denial about this fact.
 
 via [this](https://unherd.com/2022/07/peter-thiel-on-the-dangers-of-progress/)
 
-### 27
+### 26
 > Annuntiavérunt cæli iustítiam eius: et vidérunt omnes pópuli glóriam eius.
 
 – Psalm 96:6
 
-### 26
+### 25
 > I think if you were Satan and you were settin around tryin to think up somethin that would just bring the human race to its knees what you would probably come up with is narcotics.  Maybe he did.  I told that to somebody at breakfast the other mornin and they asked me if I believed in Satan.  I said Well that aint the point.  And they said I know but do you?  I had to think about that.  I guess as a boy I did.  Come the middle years my belief I reckon had waned somewhat.  Now I'm startin to lean back the other way.  He explains a lot of things that otherwise dont have no explanation.  Or not to me they dont.
 
 – Sheriff Bell in Cormac McCarthy's No Country for Old Men
 
-### 25
+### 24
 > It's a life's work to see yourself for what you really are and even then you might be wrong.
 
 – Sheriff Bell in Cormac McCarthy's No Country for Old Men
 
-### 24
+### 23
 > A community is calling its very being into question when it suddenly declares that what until now was its holiest and highest possession is strictly forbidden and when it makes the longing for it seem downright indecent. Can it be trusted any more about anything else? Won’t it proscribe again tomorrow what it prescribes today?
 
 – Ratzinger, Joseph.  Salt of the Earth: The Church at the End of the Millennium. 176.
 
 
-### 23
+### 22
 > The long journey from a medieval world wracked with suffering but pregnant with meaning has delivered us to a place of once unimaginable comfort but emptied of significance and connection.
 
 – Dreher, 2017. The Benedict Option: A Strategy for Christians in a Post-Christian Nation. Sentinel, 46.
 
-### 22
+### 21
 > Theodore Roosevelt – whose name was invoked yesterday by one speaker as a guiding light of a new “National Conservatism” – stated in his important 1910 speech, “The New Nationalism,” that “The New Nationalism puts the national need before sectional or personal advantage.” This is a refrain that was found throughout the writings of the Progressives, the need to move the loyalties and identities of Americans from their local places and people to a more abstract devotion to the nation and its ideals – coincident with the time in which America began to acquire an empire, and thought increasingly of itself as the embodiment of a universal idea that was unbounded, in theory and increasingly in fact, applicable everywhere. Indeed, a recent book, How to Hide an Empire, by the historian Daniel Immerwahr – notes that it was during this exact historical period when the word “America” began to be used to describe ourselves, replacing what had been the main self-description of our nation: the United States, more often than not, followed by the grammatically correct plural “are,” not the singular “is.”
 
 > ... Francis Bellamy, a Christian socialist, published “The Pledge of Allegiance,” with the hope and aim of aligning people’s loyalties and commitments to the nation and away from the parochial identities that had previously defined the identity of the citizens of the United States (the Bellamy salute, first practiced with the Pledge, was later adopted by the Nazis. Its wholly secular devotional was eventually corrected by the insertion of “under God” in 1954, the result of efforts especially by the Knights of Columbus).
@@ -44,7 +44,7 @@ via [this](https://unherd.com/2022/07/peter-thiel-on-the-dangers-of-progress/)
 
 via [this](https://www.frontporchrepublic.com/2019/08/the-perils-and-possibility-of-the-nation-for-the-future-of-conservatism/)
 
-### 21
+### 20
 > some postliberals, borrowing from Catholic social teaching, emphasize solidarity – a mutual sympathy and responsibility that prioritizes our nearest neighbors but includes all creation – and subsidiarity – ceding the priority of decision-making to those closest to implementation – as foundational ideas for supporting the common good. Such ideas lead also to alternative structures: through membership in local community, we grow in our skills and personal identities as we recognize and act on our obligations to the welfare of others according to our relationships with them – parent, child, co-worker, neighbor, client, vendor. Through local action in concert with our communities and the natural world, we focus on who we are and what we are together creating rather than on what we are consuming.
 
 > A structural flaw evident in mature neoliberal societies built on autonomous, atomistic individuality is the loss of a coherent ordering of the one, the few, and the many, and, in particular, the loss of the middle, replaced by a large state, mediating, through force, rights issues between individuals. An example is the rise of what some call rentier capitalism, wealth accumulation from owning rather than from producing. Rentier capitalism is largely the outcome of the machinations of those with an oligopolic share of a market or with privileged access to the complex legal system of intellectual property rights. These structures form effective barriers to market entry by those who could otherwise contribute to society through their creativity.
@@ -52,70 +52,6 @@ via [this](https://www.frontporchrepublic.com/2019/08/the-perils-and-possibility
 > ...three ways that producers are impeding repair: unreasonable repair fees coupled with low replacement costs, product design, and intellectual property (IP) law.
 
 via [this](https://www.frontporchrepublic.com/2022/07/seeking-restored-ideas-and-structures-a-review-of-the-right-to-repair/)
-
-
-### 20
-Litany of Humility by Rafael Cardinal Merry del Val
-
-> O Jesus, meek and humble of heart,  
-> Make my heart like yours.  
-> From self-will, deliver me, O Lord.  
-> From the desire of being esteemed, deliver me, O Lord.  
-> From the desire of being loved, deliver me, O Lord.  
-> From the desire of being extolled, deliver me, O Lord.  
-> From the desire of being honored, deliver me, O Lord.  
-> From the desire of being praised, deliver me, O Lord.  
-> From the desire of being preferred to others, deliver me, O Lord.  
-> From the desire of being consulted, deliver me, O Lord.  
-> From the desire of being approved, deliver me, O Lord.  
-> From the desire to be understood, deliver me, O Lord.  
-> From the desire to be visited, deliver me, O Lord.  
-> From the fear of being humiliated, deliver me, O Lord.  
-> From the fear of being despised, deliver me, O Lord.  
-> From the fear of suffering rebukes, deliver me, O Lord.  
-> From the fear of being calumniated, deliver me, O Lord.  
-> From the fear of being forgotten, deliver me, O Lord.  
-> From the fear of being ridiculed, deliver me, O Lord.  
-> From the fear of being suspected, deliver me, O Lord.  
-> From the fear of being wronged, deliver me, O Lord.  
-> From the fear of being abandoned, deliver me, O Lord.  
-> From the fear of being refused, deliver me, O Lord.  
-> That others may be loved more than I,  
-> Lord, grant me the grace to desire it.  
-> That others may be esteemed more than I,  
-> Lord, grant me the grace to desire it.  
-> That, in the opinion of the world, others may increase and I may decrease,  
-> Lord, grant me the grace to desire it.  
-> That others may be chosen and I set aside,  
-> Lord, grant me the grace to desire it.  
-> That others may be praised and I go unnoticed,  
-> Lord, grant me the grace to desire it.  
-> That others may be preferred to me in everything,  
-> Lord, grant me the grace to desire it.  
-> That others may become holier than I,  
-> provided that I may become as holy as I should,  
-> Lord, grant me the grace to desire it.  
-> At being unknown and poor,  
-> Lord, I want to rejoice.  
-> At being deprived of the natural perfections of body and mind,  
-> Lord, I want to rejoice.  
-> When people do not think of me,  
-> Lord, I want to rejoice.  
-> When they assign to me the meanest tasks,  
-> Lord, I want to rejoice.  
-> When they do not even deign to make use of me,  
-> Lord, I want to rejoice.  
-> When they never ask my opinion,  
-> Lord, I want to rejoice.  
-> When they leave me at the lowest place,  
-> Lord, I want to rejoice.  
-> When they never compliment me,  
-> Lord, I want to rejoice.  
-> When they blame me in season and out of season,  
-> Lord, I want to rejoice.  
-> Blessed are those who suffer persecution for justice’ sake,  
-> For theirs is the kingdom of heaven.  
-
 
 ### 19
 For one who already knows Latin and needs to learn French, [Arnold's First French Book](https://archive.org/details/firstfrenchbook01arnogoog/page/n4/mode/2up) is a great resource.
