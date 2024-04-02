@@ -1,7 +1,7 @@
 {{- define "main" }}
 
 <article class="post-single">
-  <header class="post-header">
+  {{/*  <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title entry-hint-parent">
       {{ .Title }}
@@ -27,7 +27,7 @@
       {{- partial "post_canonical.html" . -}}
     </div>
     {{- end }}
-  </header>
+  </header>  */}}
   {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}

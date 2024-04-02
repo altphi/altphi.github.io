@@ -2,3 +2,6 @@ node_modules/
 .idea/
 .hugo_build.lock
 
+/public/
+/resources/_gen/
+/hugo_stats.json

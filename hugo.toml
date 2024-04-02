@@ -17,10 +17,8 @@ theme = 'papermod'
     identifier = "home"
     name = "Home"
     url = "/"
-  [[menu.main]]
-    identifier = "quotations"
-    name = "Quotations"
-    url = "/quotations/"
 [taxonomies]
   tag = "tags"
   category = "categories"
+[params]
+  hideSummary = true
