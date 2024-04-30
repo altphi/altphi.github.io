@@ -133,3 +133,15 @@
     });
 </script>
 {{- end }}
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('a[href^="http"]').forEach(link => {
+        if (!link.href.startsWith(window.location.origin)) {
+          link.target = '_blank';
+          // Optionally add rel="noopener noreferrer" for security reasons
+          link.rel = 'noopener noreferrer';
+        }
+      });
+    });
+  </script>

@@ -17,6 +17,17 @@ theme = 'papermod'
     identifier = "home"
     name = "Home"
     url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 2
+  [[menu.main]]
+    identifier = "bib"
+    name = "Bib"
+    url = "/bib"
+    weight = 1
 [taxonomies]
   tag = "tags"
   category = "categories"

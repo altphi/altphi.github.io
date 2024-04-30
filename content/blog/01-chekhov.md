@@ -1,5 +1,5 @@
 +++
-date = 2019-03-01T23:18:57-04:00
+date = 2022-03-01T23:18:57-04:00
 +++
 
 > They say man only needs six feet of earth. But it is a corpse, and not man, which needs these six feet. And now people are actually saying that is it a good sign for our intellectuals to yearn for the land and try to obtain country-dwellings. And yet these estates are nothing but those same six feet of earth. To escape from the town, from the struggle, from the noise of life, to escape and hide one’s head on a country-estate, is not life, but egoism, idleness, it is a sort of renunciation, but renunciation without faith. It is not six feet of earth, not a country-estate, that man needs, but the whole globe, the whole of nature, room to display his qualities and the individual characteristics of his free soul.
