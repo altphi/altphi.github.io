@@ -8,4 +8,4 @@ date = 2022-03-01T23:18:57-04:00
 ---
 > “Pavel Konstantininch,” he said in imploring accents. “Don’t you fall into apathy, don’t you let your conscience be lulled to sleep! While you are still young, strong, active, do not be weary of well-doing. There is no such thing as happiness, nor ought there to be, but if there is any sense or purpose in life, this sense and purpose are to be found not in our own happiness, but in something greater and more rational. Do good!”
 
-– Selections from _Gooseberries_ by Anton Chekhov, tr. Ivy Litvinov
+Selections from _Gooseberries_ by Anton Chekhov, tr. Ivy Litvinov
