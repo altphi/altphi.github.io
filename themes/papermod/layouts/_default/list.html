@@ -84,7 +84,7 @@
   {{- if .Content }}
     <a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
       <div class="flex w-full">
-        <div class="post-content w-full">
+        <div class="post-content post-content-list w-full">
           {{- if not (.Param "disableAnchoredHeadings") }}
           {{- partial "anchored_headings.html" .Content -}}
           {{- else }}{{ .Content }}  {{ end }}
