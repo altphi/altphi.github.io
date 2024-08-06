@@ -82,11 +82,15 @@
   </header>
 
   {{- if .Content }}
-  <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
-  </div>
+    <a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
+      <div class="flex w-full">
+        <div class="post-content w-full">
+          {{- if not (.Param "disableAnchoredHeadings") }}
+          {{- partial "anchored_headings.html" .Content -}}
+          {{- else }}{{ .Content }}  {{ end }}
+        </div>
+      </div>
+    </a>
   {{- end }}
 
   {{- if (ne (.Param "hideSummary") true) }}

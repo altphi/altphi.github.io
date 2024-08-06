@@ -3,9 +3,9 @@
 {{/*  {{- if not .Date.IsZero -}}  */}}
 {{/*  {{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}  */}}
 {{/*  {{- end }}  */}}
-<div class="text-md flex justify-center w-full">
-    ✺
-</div>
+{{/*  <div class="flex justify-center w-full">  */}}
+    {{/*  ✺  */}}
+{{/*  </div>  */}}
 {{- if (.Param "ShowReadingTime") -}}
 {{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
 {{- end }}
