@@ -7,4 +7,4 @@ date = 2025-03-10T15:15:59-04:00
 > 
 > Et tamen minimum quod potest haberi de cognitione rerum altissimarum, desiderabilius est quam certissima cognitio quae habetur de minimis rebus...
 
-St. Thomas, Summa (I, q. 1, a. 5, ad 1)
+St. Thomas, _Summa_ (I, q. 1, a. 5, ad 1)
