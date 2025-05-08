@@ -5,18 +5,20 @@ theme = 'papermod'
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      # Enable or disable HTML rendering in Markdown content
       unsafe = true 
     [markup.goldmark.extensions]
-      # Enable or disable typographer extension
       typographer = true
-      # Enable or disable table extension
       table = true
 [menu]
   [[menu.main]]
     identifier = "home"
     name = "Home"
     url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "readings"
+    name = "Readings"
+    url = "/readings"
     weight = 1
   [[menu.main]]
     identifier = "about"
