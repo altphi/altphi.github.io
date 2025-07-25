@@ -3,7 +3,7 @@ title = "Classical Schools Aren't Really Classical"
 date = 2025-04-01T18:25:59-04:00
 +++
 
-From [Classical Schools Aren't Really Classical](https://ancientlanguage.com/classical-schools-not-classical/).
+From [_Classical Schools Aren't Really Classical_](https://ancientlanguage.com/classical-schools-not-classical/).
 
 >In study after study over the last forty years, Krashen has found that exposure to extensive comprehensible input is the decisive factor in language mastery.
 
