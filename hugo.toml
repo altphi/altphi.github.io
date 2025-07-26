@@ -11,8 +11,8 @@ theme = 'papermod'
       table = true
 [menu]
   [[menu.main]]
-    identifier = "home"
-    name = "Home"
+    identifier = "quotations"
+    name = "Quotations"
     url = "/"
     weight = 1
   [[menu.main]]
@@ -21,12 +21,23 @@ theme = 'papermod'
     url = "/readings"
     weight = 1
   [[menu.main]]
+    identifier = "techne"
+    name = "Techne"
+    url = "/techne"
+    weight = 2
+  [[menu.main]]
+    identifier = "photos"
+    name = "Photos"
+    url = "/photos"
+    weight = 3
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about"
-    weight = 2
+    weight = 4
 [taxonomies]
   tag = "tags"
   category = "categories"
 [params]
   hideSummary = true
+  pluralizeListTitles = false
