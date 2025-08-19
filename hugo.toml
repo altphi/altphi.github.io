@@ -26,6 +26,11 @@ theme = 'papermod'
     url = "/techne"
     weight = 2
   [[menu.main]]
+    identifier = "links"
+    name = "Links"
+    url = "/links"
+    weight = 2
+  [[menu.main]]
     identifier = "photos"
     name = "Photos"
     url = "/photos"
