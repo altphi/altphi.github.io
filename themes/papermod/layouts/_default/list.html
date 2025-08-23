@@ -31,7 +31,7 @@
 {{- end }}
 
 {{- if .Content }}
-<div class="post-content">
+<div class="post-single post-content">
   {{- if not (.Param "disableAnchoredHeadings") }}
   {{- partial "anchored_headings.html" .Content -}}
   {{- else }}{{ .Content }}{{ end }}
@@ -81,16 +81,17 @@
     </h2>
   </header>
 
+  {{/* SDB this click handler needs attn... it loads links within .Content also also
+  the single-post page with one click and that's weird */}}
+
   {{- if .Content }}
-    <a aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}">
-      <div class="flex w-full">
-        <div class="post-content post-content-list w-full">
+      <div class="flex w-full" onclick="window.location.href = '{{ .Permalink }}';">
+        <div class="post-content w-full">
           {{- if not (.Param "disableAnchoredHeadings") }}
           {{- partial "anchored_headings.html" .Content -}}
-          {{- else }}{{ .Content }}  {{ end }}
+          {{- else }} {{ .Content }} {{ end }}
         </div>
       </div>
-    </a>
   {{- end }}
 
   {{- if (ne (.Param "hideSummary") true) }}

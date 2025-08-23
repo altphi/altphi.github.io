@@ -16,10 +16,10 @@ theme = 'papermod'
     url = "/"
     weight = 1
   [[menu.main]]
-    identifier = "readings"
-    name = "Readings"
-    url = "/readings"
-    weight = 1
+    identifier = "notes"
+    name = "Notes"
+    url = "/notes"
+    weight = 2
   [[menu.main]]
     identifier = "techne"
     name = "Techne"
@@ -29,7 +29,7 @@ theme = 'papermod'
     identifier = "links"
     name = "Links"
     url = "/links"
-    weight = 2
+    weight = 3
   [[menu.main]]
     identifier = "photos"
     name = "Photos"

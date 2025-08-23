@@ -31,6 +31,8 @@ draft = false
 > Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
   
 > Every program is a part of some other program and rarely fits.
+
+> Programming is an unnatural act.
   
 > If a program manipulates a large amount of data, it does so in a small number of ways.
   
@@ -182,8 +184,6 @@ draft = false
   
 > We kid ourselves if we think that the ratio of procedure to data in an active data-base system can be made arbitrarily small or even kept small.
   
-> We have the mini and the micro computer. In what semantic niche would the pico computer fall?
-  
 > It is not the computer's fault that Maxwell's equations are not adequate to design the electric motor.
   
 > One does not learn computing by using a hand calculator, but one can forget arithmetic.
@@ -246,7 +246,7 @@ draft = false
   
 > If you can imagine a society in which the computer- robot is the only menial, you can imagine anything.
   
-> Programming is an unnatural act.
-  
 > Adapting old programs to fit new machines usually means adapting new machines to behave like old ones. 
 
+> We have the mini and the micro computer. In what semantic niche would the pico computer fall?
+  
