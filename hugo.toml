@@ -17,8 +17,8 @@ theme = 'papermod'
     weight = 1
   [[menu.main]]
     identifier = "notes"
-    name = "Notes"
-    url = "/notes"
+    name = "Jots"
+    url = "/jots"
     weight = 2
   [[menu.main]]
     identifier = "techne"
