@@ -46,3 +46,4 @@ theme = 'papermod'
 [params]
   hideSummary = true
   pluralizeListTitles = false
+  math = true
