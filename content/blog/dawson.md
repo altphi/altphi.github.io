@@ -9,7 +9,7 @@ date = 2025-10-19T12:26:07-05:00
 > relations.  But while Catholicism recognizes the distinction and the autonomy
 > of the natural and the supernatural orders, it can never acquiesce in their
 > segregation.  The spiritual and the eternal insert themselves into the world
-> of sensible and temporal things, and there is not the smallest event in huamn
+> of sensible and temporal things, and there is not the smallest event in human
 > life and social history but possesses an eternal and spiritual significance.
 
 Christopher Dawson
