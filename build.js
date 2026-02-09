@@ -103,6 +103,10 @@ async function buildPost(filename, template) {
   const cleanBody = stripHashtags(body);
   const html = marked(cleanBody);
 
+  // Generate description from plain text (first 160 chars)
+  const plainText = cleanBody.replace(/[#*_`>\[\]]/g, '').replace(/\s+/g, ' ').trim();
+  const description = plainText.slice(0, 160) + (plainText.length > 160 ? '...' : '');
+
   const tagsHtml = [category, ...tags].map(t => `<span class="tag">${t}</span>`).join('');
 
   const postHtml = template
@@ -110,7 +114,8 @@ async function buildPost(filename, template) {
     .replaceAll('{{date}}', metadata.date || '')
     .replaceAll('{{tags}}', tagsHtml)
     .replaceAll('{{content}}', html)
-    .replaceAll('{{slug}}', slug);
+    .replaceAll('{{slug}}', slug)
+    .replaceAll('{{description}}', escapeXml(description));
 
   await writeFile(`${OUTPUT_DIR}/${slug}.html`, postHtml);
 
@@ -127,6 +132,7 @@ async function buildPhoto(filename, template) {
   const slug = 'photo-' + filename.replace(/\.[^.]+$/, '');
   const category = 'photos';
   const tags = [];
+  const description = 'Photo from log.j38.uk';
   const html = `<a href="${filename}" target="_blank"><img src="${filename}" alt="" loading="lazy" /></a>`;
   const tagsHtml = `<span class="tag">${category}</span>`;
 
@@ -135,7 +141,8 @@ async function buildPhoto(filename, template) {
     .replaceAll('{{date}}', '')
     .replaceAll('{{tags}}', tagsHtml)
     .replaceAll('{{content}}', html)
-    .replaceAll('{{slug}}', slug);
+    .replaceAll('{{slug}}', slug)
+    .replaceAll('{{description}}', description);
 
   await writeFile(`${OUTPUT_DIR}/${slug}.html`, postHtml);
 
