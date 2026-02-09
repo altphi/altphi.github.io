@@ -1,1 +1,0 @@
-<a href="{{ .Destination | safeURL }}"{{ if not (strings.HasPrefix .Destination "/") }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>

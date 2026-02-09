@@ -1,0 +1,5 @@
+>An hour later, going back to my hotel, I ran into a peasant woman with a nursing baby. She was a young woman, and the baby was about six weeks old. And the baby smiled at her, as far as she’d noticed, for the first time since it was born. I saw her suddenly cross herself very, very piously. ‘What is it, young woman?’ I say. (I was asking questions all the time then.) . 'It’s just that a mother rejoices,’ she says, 'when she notices her baby’s first smile, the same as God rejoices each time he looks down from heaven and sees a sinner standing before him and praying with all his heart.’ The woman said that to me, in almost those words, and it was a deep, such a subtle and truly religious thought, a thought that all at once expressed the whole essence of Christianity, that is, the whole idea of God as our own father, and that God rejoices over man as a father over his own child – the main thought of Christ! A simple peasant woman!
+
+Dostoevsky, _The Idiot_ tr. Pevear & Volokhonsky, 2001.
+
+#main

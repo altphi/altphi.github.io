@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="style.css?v={{v}}">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+</head>
+<body>
+  <nav>
+    <a href="/">← All posts</a>
+  </nav>
+  <main>
+    <article>
+      <header>
+        <!-- <h1>{{title}}</h1> -->
+        <!-- <div class="tags">{{tags}}</div> -->
+      </header>
+      <div class="content">
+        {{content}}
+      </div>
+    </article>
+  </main>
+  <script src="main.js?v={{v}}"></script>
+</body>
+</html>

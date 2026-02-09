@@ -1,11 +1,2 @@
-.DS_Store
 node_modules/
-.idea/
-.hugo_build.lock
-
-/public/
-/resources/_gen/
-/hugo_stats.json
-/.direnv/
-.envrc
-.aider*
+.claude/
