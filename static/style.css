@@ -175,6 +175,14 @@ article header {
   margin-left: auto;
 }
 
+.posts {
+  opacity: 0;
+}
+
+.posts.ready {
+  opacity: 1;
+}
+
 @keyframes post-reveal {
   from { background: color-mix(in srgb, var(--link) 20%, transparent); }
   to { background: transparent; }

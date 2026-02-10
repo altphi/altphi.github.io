@@ -140,6 +140,8 @@ if (searchInput) {
 
 // Initialize
 init();
+const postsContainer = document.querySelector('.posts');
+if (postsContainer) postsContainer.classList.add('ready');
 
 // Help modal
 const modal = document.createElement('div');
