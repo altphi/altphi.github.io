@@ -65,6 +65,21 @@ nav a:hover {
   color: var(--text);
 }
 
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+footer a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--text);
+}
+
 h1 {
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
@@ -121,6 +136,9 @@ article header {
 }
 
 .filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 
@@ -149,6 +167,21 @@ article header {
 .category-filter.off {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+.post-count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+@keyframes post-reveal {
+  from { background: color-mix(in srgb, var(--link) 20%, transparent); }
+  to { background: transparent; }
+}
+
+.post-reveal {
+  animation: post-reveal 1s ease-out;
 }
 
 .post-preview {

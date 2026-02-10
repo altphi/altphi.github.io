@@ -9,6 +9,12 @@ let searchQuery = '';
 let lastKey = '';
 let lastKeyTime = 0;
 
+// Post count indicator
+const countEl = document.createElement('span');
+countEl.className = 'post-count';
+const filtersEl = document.querySelector('.filters');
+if (filtersEl) filtersEl.appendChild(countEl);
+
 function filterPosts() {
   posts.forEach(post => {
     const category = post.dataset.category;
@@ -18,6 +24,8 @@ function filterPosts() {
     const matchesSearch = !searchQuery || text.includes(searchQuery.toLowerCase());
     post.classList.toggle('hidden', !matchesCategory || !notOff || !matchesSearch);
   });
+  const visible = [...posts].filter(p => !p.classList.contains('hidden'));
+  countEl.textContent = visible.length + ' of ' + posts.length;
 }
 
 function updateUrl() {
@@ -104,8 +112,20 @@ filters.forEach(btn => {
       activeCategories.add(cat);
       btn.classList.add('active');
     }
+    const wasHidden = new Set([...posts].filter(p => p.classList.contains('hidden')));
     filterPosts();
     updateUrl();
+
+    // Pulse newly-revealed posts and badge
+    const revealed = [...posts].filter(p => wasHidden.has(p) && !p.classList.contains('hidden'));
+    revealed.forEach(p => p.classList.remove('post-reveal'));
+    countEl.classList.remove('post-reveal');
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        revealed.forEach(p => p.classList.add('post-reveal'));
+        countEl.classList.add('post-reveal');
+      });
+    });
   });
 });
 
@@ -137,6 +157,7 @@ modal.innerHTML = `
       <dt><kbd>L</kbd></dt><dd>History forward</dd>
       <dt><kbd>/</kbd></dt><dd>Focus search</dd>
       <dt><kbd>Escape</kbd></dt><dd>Clear / Close</dd>
+      <dt><kbd>1</kbd>–<kbd>${filters.length}</kbd></dt><dd>Toggle filter</dd>
       <dt><kbd>?</kbd></dt><dd>Show this help</dd>
       <dt>Click</dt><dd>Open post</dd>
       <dt><kbd>⌥</kbd> Click</dt><dd>Select post</dd>
@@ -158,6 +179,13 @@ document.addEventListener('keydown', (e) => {
   // Close modal on escape
   if (e.key === 'Escape' && modal.classList.contains('open')) {
     modal.classList.remove('open');
+    return;
+  }
+
+  // Number keys toggle category filters
+  const num = parseInt(e.key);
+  if (!inSearch && num >= 1 && num <= filters.length) {
+    filters[num - 1].click();
     return;
   }
 
