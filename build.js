@@ -271,7 +271,7 @@ async function build() {
   }
 
   // Combine and sort: date-based posts first (newest first), then others
-  const isDateBased = (slug) => /^\d{4}-\d{2}-\d{2}/.test(slug);
+  const isDateBased = (slug) => /^(photo-)?\d{4}-\d{2}-\d{2}/.test(slug);
   const posts = [...markdownPosts, ...photoPosts].sort((a, b) => {
     const aDate = isDateBased(a.slug);
     const bDate = isDateBased(b.slug);

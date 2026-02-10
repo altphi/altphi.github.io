@@ -9,7 +9,8 @@
     "build": "node build.js",
     "serve": "npx serve docs",
     "check-tags": "node check-tags.js",
-    "new": "node new-post.js"
+    "new": "node new-post.js",
+    "watch": "node watch.js"
   },
   "dependencies": {
     "marked": "^12.0.0"
