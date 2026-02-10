@@ -1,7 +1,8 @@
 import { readdir, readFile, writeFile, mkdir, cp, rm } from 'fs/promises';
 import { existsSync } from 'fs';
 import { execSync } from 'child_process';
-import { marked } from 'marked';
+import { Marked } from 'marked';
+import markedFootnote from 'marked-footnote';
 
 const POSTS_DIR = 'posts';
 const PHOTOS_DIR = 'photos';
@@ -101,7 +102,7 @@ async function buildPost(filename, template) {
 
   // Strip hashtags from content before rendering
   const cleanBody = stripHashtags(body);
-  const html = marked(cleanBody);
+  const html = new Marked().use(markedFootnote({ description: "", footnoteDivider: true })).parse(cleanBody);
 
   // Generate description from plain text (first 160 chars)
   const plainText = cleanBody.replace(/[#*_`>\[\]]/g, '').replace(/\s+/g, ' ').trim();
