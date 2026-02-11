@@ -57,6 +57,25 @@ function extractHashtags(body) {
   return [...new Set(hashtags)];
 }
 
+function protectLatex(text) {
+  const blocks = [];
+  // Display math ($$...$$), may span multiple lines
+  let result = text.replace(/\$\$[\s\S]*?\$\$/g, (match) => {
+    blocks.push(match);
+    return `\x00LATEX${blocks.length - 1}\x00`;
+  });
+  // Inline math ($...$), single line, avoid matching $$
+  result = result.replace(/(?<!\$)\$(?!\$)([^\$\n]+?)\$(?!\$)/g, (match) => {
+    blocks.push(match);
+    return `\x00LATEX${blocks.length - 1}\x00`;
+  });
+  return { text: result, blocks };
+}
+
+function restoreLatex(html, blocks) {
+  return html.replace(/\x00LATEX(\d+)\x00/g, (_, i) => blocks[i]);
+}
+
 function stripHashtags(body) {
   // Strip hashtags but preserve code blocks
   const codeBlocks = [];
@@ -102,7 +121,9 @@ async function buildPost(filename, template) {
 
   // Strip hashtags from content before rendering
   const cleanBody = stripHashtags(body);
-  const html = new Marked().use(markedFootnote({ description: "", footnoteDivider: true })).parse(cleanBody);
+  const { text: protectedBody, blocks: latexBlocks } = protectLatex(cleanBody);
+  const rawHtml = new Marked().use(markedFootnote({ description: "", footnoteDivider: true })).parse(protectedBody);
+  const html = restoreLatex(rawHtml, latexBlocks);
 
   // Generate description from plain text (first 160 chars)
   const plainText = cleanBody.replace(/[#*_`>\[\]]/g, '').replace(/\s+/g, ' ').trim();
