@@ -20,8 +20,8 @@ npm run new              # Create new post with #dailies category
 npm run new -- tech      # Create new post with #tech category
 npm run new -- <category> # Create new post with specified category
 
-npm run build            # Build the site to docs/
-npm run serve            # Serve the docs/ folder locally
+npm run build            # Build the site to build/
+npm run serve            # Serve the build/ folder locally
 npm run check-tags       # Check posts for category issues
 ```
 
@@ -98,7 +98,7 @@ Photos placed in the `photos/` directory are automatically built as posts with t
 
 ## Output
 
-The site is built to the `docs/` directory for GitHub Pages compatibility.
+The site is built to the `build/` directory and deployed via GitHub Actions.
 
 ## RSS Feed
 

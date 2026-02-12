@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.js",
-    "serve": "npx serve docs",
+    "serve": "npx serve build",
     "check-tags": "node check-tags.js",
     "new": "node new-post.js",
     "watch": "node watch.js"

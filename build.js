@@ -6,7 +6,7 @@ import markedFootnote from 'marked-footnote';
 
 const POSTS_DIR = 'posts';
 const PHOTOS_DIR = 'photos';
-const OUTPUT_DIR = 'docs';
+const OUTPUT_DIR = 'build';
 const PHOTO_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
 const SITE_URL = 'https://log.j38.uk';
 

@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://log.j38.uk/sitemap.xml
