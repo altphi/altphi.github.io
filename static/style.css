@@ -146,12 +146,22 @@ article header {
   background: var(--btn-bg);
   border: 1px solid var(--border);
   padding: 0.25rem 0.75rem;
-  border-radius: 3px;
+  border-radius: 0;
   font-size: 0.875rem;
   cursor: pointer;
-  margin-right: 0.5rem;
+  margin-right: 0;
   margin-bottom: 0.5rem;
+  margin-left: -1px;
   color: var(--text);
+}
+
+.category-filter:first-child {
+  border-radius: 3px 0 0 3px;
+  margin-left: 0;
+}
+
+.category-filter:last-of-type {
+  border-radius: 0 3px 3px 0;
 }
 
 .category-filter:hover {
@@ -162,11 +172,8 @@ article header {
   background: var(--btn-active-bg);
   color: var(--btn-active-text);
   border-color: var(--btn-active-bg);
-}
-
-.category-filter.off {
-  text-decoration: line-through;
-  opacity: 0.5;
+  position: relative;
+  z-index: 1;
 }
 
 .post-count {

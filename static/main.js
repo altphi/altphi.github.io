@@ -2,9 +2,7 @@
 const filters = document.querySelectorAll('.category-filter');
 const posts = document.querySelectorAll('.post-preview');
 const searchInput = document.querySelector('.search');
-const activeCategories = new Set();
-const offCategories = new Set();
-const DEFAULT_OFF = ['tech', 'dailies', 'about'];
+let activeTab = 'all';
 let searchQuery = '';
 let lastKey = '';
 let lastKeyTime = 0;
@@ -19,22 +17,25 @@ function filterPosts() {
   posts.forEach(post => {
     const category = post.dataset.category;
     const text = post.textContent.toLowerCase();
-    const matchesCategory = activeCategories.size === 0 || activeCategories.has(category);
-    const notOff = !offCategories.has(category);
+    const matchesCategory = activeTab === 'all' || category === activeTab;
     const matchesSearch = !searchQuery || text.includes(searchQuery.toLowerCase());
-    post.classList.toggle('hidden', !matchesCategory || !notOff || !matchesSearch);
+    post.classList.toggle('hidden', !matchesCategory || !matchesSearch);
   });
   const visible = [...posts].filter(p => !p.classList.contains('hidden'));
   countEl.textContent = visible.length + ' of ' + posts.length;
 }
 
+function setActiveTab(category) {
+  activeTab = category;
+  filters.forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.category === category);
+  });
+}
+
 function updateUrl() {
   const params = new URLSearchParams();
-  if (activeCategories.size > 0) {
-    params.set('c', [...activeCategories].join(','));
-  }
-  if (offCategories.size > 0) {
-    params.set('off', [...offCategories].join(','));
+  if (activeTab !== 'all') {
+    params.set('c', activeTab);
   }
   if (searchQuery) {
     params.set('q', searchQuery);
@@ -46,72 +47,24 @@ function updateUrl() {
 // Initialize filters from URL or defaults
 function init() {
   const params = new URLSearchParams(window.location.search);
-  const hasParams = params.has('c') || params.has('off') || params.has('q');
+  const cat = params.get('c');
+  const q = params.get('q');
 
-  if (hasParams) {
-    // Load from URL
-    const active = params.get('c');
-    const off = params.get('off');
-    const q = params.get('q');
-
-    if (active) {
-      active.split(',').forEach(cat => {
-        activeCategories.add(cat);
-        filters.forEach(btn => {
-          if (btn.dataset.category === cat) btn.classList.add('active');
-        });
-      });
-    }
-    if (off) {
-      off.split(',').forEach(cat => {
-        offCategories.add(cat);
-        filters.forEach(btn => {
-          if (btn.dataset.category === cat) btn.classList.add('off');
-        });
-      });
-    }
-    if (q && searchInput) {
-      searchQuery = q;
-      searchInput.value = q;
-    }
-  } else {
-    // Apply defaults
-    filters.forEach(btn => {
-      const cat = btn.dataset.category;
-      if (DEFAULT_OFF.includes(cat)) {
-        offCategories.add(cat);
-        btn.classList.add('off');
-      } else {
-        activeCategories.add(cat);
-        btn.classList.add('active');
-      }
-    });
+  if (cat) {
+    setActiveTab(cat);
+  }
+  if (q && searchInput) {
+    searchQuery = q;
+    searchInput.value = q;
   }
   filterPosts();
 }
 
-// Category filtering: toggle on/off
+// Category filtering: tab selection
 filters.forEach(btn => {
   btn.addEventListener('click', () => {
     const cat = btn.dataset.category;
-
-    if (activeCategories.has(cat)) {
-      // on → off
-      activeCategories.delete(cat);
-      btn.classList.remove('active');
-      offCategories.add(cat);
-      btn.classList.add('off');
-    } else if (offCategories.has(cat)) {
-      // off → on
-      offCategories.delete(cat);
-      btn.classList.remove('off');
-      activeCategories.add(cat);
-      btn.classList.add('active');
-    } else {
-      // neutral → on
-      activeCategories.add(cat);
-      btn.classList.add('active');
-    }
+    setActiveTab(cat);
     const wasHidden = new Set([...posts].filter(p => p.classList.contains('hidden')));
     filterPosts();
     updateUrl();
@@ -159,7 +112,7 @@ modal.innerHTML = `
       <dt><kbd>L</kbd></dt><dd>History forward</dd>
       <dt><kbd>/</kbd></dt><dd>Focus search</dd>
       <dt><kbd>Escape</kbd></dt><dd>Clear / Close</dd>
-      <dt><kbd>1</kbd>–<kbd>${filters.length}</kbd></dt><dd>Toggle filter</dd>
+      <dt><kbd>1</kbd>–<kbd>${filters.length}</kbd></dt><dd>Switch tab</dd>
       <dt><kbd>?</kbd></dt><dd>Show this help</dd>
       <dt>Click</dt><dd>Open post</dd>
       <dt><kbd>⌥</kbd> Click</dt><dd>Select post</dd>
@@ -184,7 +137,7 @@ document.addEventListener('keydown', (e) => {
     return;
   }
 
-  // Number keys toggle category filters
+  // Number keys switch tabs
   const num = parseInt(e.key);
   if (!inSearch && num >= 1 && num <= filters.length) {
     filters[num - 1].click();
@@ -266,13 +219,10 @@ document.addEventListener('keydown', (e) => {
     const slug = current.dataset.slug;
     if (slug) window.location.href = slug + '.html';
   } else if (e.key === 'Escape') {
-    if (activeCategories.size > 0 || offCategories.size > 0) {
-      activeCategories.clear();
-      offCategories.clear();
-      filters.forEach(f => f.classList.remove('active', 'off'));
-    }
-    posts.forEach(p => p.classList.remove('focused'));
+    setActiveTab('all');
     filterPosts();
+    updateUrl();
+    posts.forEach(p => p.classList.remove('focused'));
   }
 });
 
