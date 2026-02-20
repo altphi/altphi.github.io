@@ -19,4 +19,4 @@ words, much if not most of the time they do what they wish, despite enacted or a
 
 > The state thus emerges as a social organism endowed with its own internal logic and continuity, capable of pursuing goals and directions often independent of those declared or pursued by the political leadership of the day. This has always been true — even if, depending on the relative balance of class forces within society, the state may at times be forced to make concessions to the forces of popular politics. In other words, then, today’s crisis doesn’t represent democracy’s sudden collapse, but instead the unveiling of how power truly works. The contemporary crisis of Western democracy exposes the limits of formal democratic institutions, bringing the logic of state power into blindingly sharp relief.
 
-#main
+#dailies

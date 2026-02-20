@@ -2,7 +2,7 @@
 const filters = document.querySelectorAll('.category-filter');
 const posts = document.querySelectorAll('.post-preview');
 const searchInput = document.querySelector('.search');
-let activeTab = 'all';
+let activeTab = 'main';
 let searchQuery = '';
 let lastKey = '';
 let lastKeyTime = 0;
@@ -34,7 +34,7 @@ function setActiveTab(category) {
 
 function updateUrl() {
   const params = new URLSearchParams();
-  if (activeTab !== 'all') {
+  if (activeTab !== 'main') {
     params.set('c', activeTab);
   }
   if (searchQuery) {
@@ -219,7 +219,7 @@ document.addEventListener('keydown', (e) => {
     const slug = current.dataset.slug;
     if (slug) window.location.href = slug + '.html';
   } else if (e.key === 'Escape') {
-    setActiveTab('all');
+    setActiveTab('main');
     filterPosts();
     updateUrl();
     posts.forEach(p => p.classList.remove('focused'));

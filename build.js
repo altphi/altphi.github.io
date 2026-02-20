@@ -192,11 +192,11 @@ async function buildIndex(posts, template) {
     .join('');
 
   const usedCategories = [...new Set(posts.map(p => p.category))];
-  const filterHtml = `<button class="category-filter active" data-category="all">all</button>` +
-    CATEGORIES
+  const filterHtml = CATEGORIES
     .filter(c => usedCategories.includes(c))
-    .map(c => `<button class="category-filter" data-category="${c}">${c}</button>`)
-    .join('');
+    .map(c => `<button class="category-filter${c === 'main' ? ' active' : ''}" data-category="${c}">${c}</button>`)
+    .join('') +
+    `<button class="category-filter" data-category="all">all</button>`;
 
   const indexHtml = template
     .replace('{{posts}}', postsHtml)
