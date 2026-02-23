@@ -102,6 +102,8 @@ modal.innerHTML = `
   <div class="modal-content">
     <h3>Keyboard Shortcuts</h3>
     <dl>
+      <dt><kbd>1</kbd>–<kbd>${filters.length}</kbd></dt><dd>Switch tab</dd>
+      <dt><kbd>/</kbd></dt><dd>Focus search</dd>
       <dt><kbd>j</kbd> / <kbd>↓</kbd></dt><dd>Next post</dd>
       <dt><kbd>k</kbd> / <kbd>↑</kbd></dt><dd>Previous post</dd>
       <dt><kbd>gg</kbd></dt><dd>First post</dd>
@@ -109,9 +111,7 @@ modal.innerHTML = `
       <dt><kbd>Enter</kbd></dt><dd>Open post</dd>
       <dt><kbd>H</kbd></dt><dd>History back</dd>
       <dt><kbd>L</kbd></dt><dd>History forward</dd>
-      <dt><kbd>/</kbd></dt><dd>Focus search</dd>
       <dt><kbd>Escape</kbd></dt><dd>Clear / Close</dd>
-      <dt><kbd>1</kbd>–<kbd>${filters.length}</kbd></dt><dd>Switch tab</dd>
       <dt><kbd>?</kbd></dt><dd>Show this help</dd>
       <dt>Click</dt><dd>Open post</dd>
       <dt><kbd>⌥</kbd> Click</dt><dd>Select post</dd>

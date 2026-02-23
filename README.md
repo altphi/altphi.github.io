@@ -43,7 +43,7 @@ This is my post content.
 #dailies
 ```
 
-Available categories: `main`, `photos`, `tech`, `dailies`, `about`
+Available categories: `main`, `photos`, `tech`, `dailies`, `links`, `about`
 
 If a post has no category, the build process automatically adds `#dailies`.
 
@@ -76,6 +76,8 @@ Clicking the header "log.j38.uk" resets to the default view.
 
 | Key | Action |
 |-----|--------|
+| `1`–`7` | Switch tab |
+| `/` | Focus search |
 | `j` / `↓` | Next post |
 | `k` / `↑` | Previous post |
 | `gg` | First post |
@@ -83,8 +85,7 @@ Clicking the header "log.j38.uk" resets to the default view.
 | `Enter` | Open post |
 | `H` | History back |
 | `L` | History forward |
-| `/` | Focus search |
-| `Escape` | Clear filters / Close modal |
+| `Escape` | Clear / Close |
 | `?` | Show help |
 
 ### Mouse
