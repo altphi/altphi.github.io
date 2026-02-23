@@ -102,6 +102,10 @@ async function buildPost(filename, template) {
 
   // Extract hashtags and separate into category and tags
   const allHashtags = extractHashtags(body);
+
+  // Skip WIP posts
+  if (allHashtags.includes('wip')) return null;
+
   const categories = allHashtags.filter(t => CATEGORIES.includes(t));
   const tags = allHashtags.filter(t => !CATEGORIES.includes(t));
 
@@ -274,7 +278,7 @@ async function build() {
   // Build all markdown posts
   const files = await readdir(POSTS_DIR);
   const mdFiles = files.filter(f => f.endsWith('.md'));
-  const markdownPosts = await Promise.all(mdFiles.map(f => buildPost(f, postTemplate)));
+  const markdownPosts = (await Promise.all(mdFiles.map(f => buildPost(f, postTemplate)))).filter(Boolean);
 
   // Build photo posts
   let photoPosts = [];
