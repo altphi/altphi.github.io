@@ -244,4 +244,4 @@
 
 > We have the mini and the micro computer. In what semantic niche would the pico computer fall?
 
-#main
+#tech

@@ -1,9 +1,8 @@
-# Hello World
-
-This blog is a place for [me](https://x.com/altphi) to place quotations, notes,
+This blog is a place for me to place quotations, notes,
 thoughts, photos.  There is no comment system here but feel free to reach out
 on [matrix](https://matrix.to/#/@altphi:matrix.org) or [X](https://x.com/altphi).
 
+The source code (minimalist blog) for this site is [
 ## How to navigate
 - Hit `?` to see keyboard shortcuts.
 - Filters at the top toggle posts on and off.
