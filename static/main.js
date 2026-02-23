@@ -58,6 +58,7 @@ function init() {
     searchInput.value = q;
   }
   filterPosts();
+  document.documentElement.classList.remove('loading-filter');
 }
 
 // Category filtering: tab selection
@@ -213,7 +214,7 @@ document.addEventListener('keydown', (e) => {
     e.preventDefault();
     index = Math.max(index - 1, 0);
     focusPost(visible, index);
-  } else if (e.key === 'Enter' && current) {
+  } else if (e.key === 'Enter' && current && !current.hasAttribute('data-page')) {
     const slug = current.dataset.slug;
     if (slug) window.location.href = slug + '.html';
   } else if (e.key === 'Escape') {
@@ -241,14 +242,15 @@ function focusPost(visible, index) {
 
 // Post click handlers: click to open, alt-click to select
 posts.forEach(post => {
-  post.style.cursor = 'pointer';
+  const isPage = post.hasAttribute('data-page');
+  if (!isPage) post.style.cursor = 'pointer';
   post.addEventListener('click', (e) => {
     if (e.altKey) {
       // Alt-click: select without opening
       e.preventDefault();
       posts.forEach(p => p.classList.remove('focused'));
       post.classList.add('focused');
-    } else {
+    } else if (!isPage) {
       // Normal click: open post
       const slug = post.dataset.slug;
       if (slug) window.location.href = slug + '.html';

@@ -1,7 +1,7 @@
 import { readdir, readFile } from 'fs/promises';
 
 const POSTS_DIR = 'posts';
-const CATEGORIES = ['main', 'photos', 'tech', 'dailies', 'about'];
+const CATEGORIES = ['main', 'photos', 'tech', 'dailies', 'links', 'about'];
 
 function extractHashtags(content) {
   const withoutCode = content

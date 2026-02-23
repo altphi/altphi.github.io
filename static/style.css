@@ -227,6 +227,12 @@ article header {
   display: none;
 }
 
+html.loading-filter .category-filter.active {
+  color: var(--text-muted);
+  border-bottom-color: transparent;
+  font-weight: normal;
+}
+
 .content h1 { font-size: 1.6rem; }
 .content h2 { font-size: 1.35rem; }
 .content h3 { font-size: 1.15rem; }

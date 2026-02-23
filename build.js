@@ -11,7 +11,7 @@ const PHOTO_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
 const SITE_URL = 'https://log.j38.uk';
 
 // Categories shown as filter buttons (each post must have exactly one)
-const CATEGORIES = ['main', 'photos', 'tech', 'dailies', 'about'];
+const CATEGORIES = ['main', 'photos', 'tech', 'dailies', 'links', 'about'];
 const DEFAULT_CATEGORY = 'dailies';
 
 function parseFrontmatter(content) {
@@ -143,7 +143,11 @@ async function buildPost(filename, template) {
     .replaceAll('{{slug}}', slug)
     .replaceAll('{{description}}', escapeXml(description));
 
-  await writeFile(`${OUTPUT_DIR}/${slug}.html`, postHtml);
+  const isPage = tags.includes('page');
+
+  if (!isPage) {
+    await writeFile(`${OUTPUT_DIR}/${slug}.html`, postHtml);
+  }
 
   return {
     slug,
@@ -151,6 +155,7 @@ async function buildPost(filename, template) {
     category,
     tags,
     html,
+    isPage,
   };
 }
 
@@ -187,7 +192,7 @@ async function buildIndex(posts, template) {
       const allTags = [post.category, ...post.tags];
       const tagsHtml = allTags.map(t => `<span class="tag" data-tag="${t}">${t}</span>`).join('');
       return `
-        <article class="post-preview" data-category="${post.category}" data-tags="${post.tags.join(',')}" data-slug="${post.slug}">
+        <article class="post-preview" data-category="${post.category}" data-tags="${post.tags.join(',')}" data-slug="${post.slug}"${post.isPage ? ' data-page' : ''}>
           <!-- <div class="tags">${tagsHtml}</div> -->
           <div class="content">${post.html}</div>
         </article>
