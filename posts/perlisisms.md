@@ -3,21 +3,21 @@
 (gradually being reordered here according to my most to least favorite)
 
 > Make no mistake about it: Computers process numbers - not symbols. We measure our understanding (and control) by the extent to which we can arithmetize an activity.
-
+  
 > Syntactic sugar causes cancer of the semicolon.
-
+  
 > The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.
   
 > Optimization hinders evolution.
-
+  
 > Simplicity does not precede complexity, but follows it.
-
+  
 > Recursion is the root of computation since it trades description for time.
   
 > Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere.
-
+  
 > There will always be things we wish to say in our programs that in all known languages can only be said poorly.
-
+  
 > You think you know when you can learn, are more sure when you can write, even more when you can teach, but certain when you can program.
   
 > One man's constant is another man's variable.
@@ -25,14 +25,14 @@
 > Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
   
 > Every program is a part of some other program and rarely fits.
-
+  
+> A programming language is low level when its programs require attention to the irrelevant.
+  
 > Programming is an unnatural act.
   
 > If a program manipulates a large amount of data, it does so in a small number of ways.
   
 > It is easier to write an incorrect program than understand a correct one.
-  
-> A programming language is low level when its programs require attention to the irrelevant.
   
 > It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
   
@@ -43,16 +43,16 @@
 > If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
   
 > In the long run every program becomes rococo - then rubble.
-
+  
 > Everything should be built top-down, except the first time.
   
-> Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.  
-
+> Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
+  
 > If a listener nods his head when you're explaining your program, wake him up.
   
 > A program without a loop and a structured variable isn't worth writing.
   
-> A language that doesn't affect the way you think about programming, is not worth knowing.  
+> A language that doesn't affect the way you think about programming, is not worth knowing.
   
 > Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.
   
@@ -73,8 +73,6 @@
 > In programming, everything we do is a special case of something more general -- and often we know it too quickly.
   
 > Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.
-  
-> The eleventh commandment was "Thou Shalt Compute" or "Thou Shalt Not Compute" - I forget which.
   
 > Everyone can be taught to sculpt: Michelangelo would have had to be taught not to. So it is with great programmers.
   
@@ -226,6 +224,8 @@
   
 > Why did the Roman Empire collapse? What is Latin for office automation?
   
+> The eleventh commandment was "Thou Shalt Compute" or "Thou Shalt Not Compute" - I forget which.
+  
 > Computer Science is embarrassed by the computer.
   
 > The only constructive theory connecting neuroscience and psychology will arise from the study of software.
@@ -240,8 +240,8 @@
   
 > If you can imagine a society in which the computer- robot is the only menial, you can imagine anything.
   
-> Adapting old programs to fit new machines usually means adapting new machines to behave like old ones. 
-
+> Adapting old programs to fit new machines usually means adapting new machines to behave like old ones.
+  
 > We have the mini and the micro computer. In what semantic niche would the pico computer fall?
 
 #tech
