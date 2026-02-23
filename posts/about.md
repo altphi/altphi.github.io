@@ -1,4 +1,4 @@
-This blog is a place for me to place quotations, notes,
+This blog is a place for me to keep quotations, notes,
 thoughts, photos.  There is no comment system here but feel free to reach out
 on [matrix](https://matrix.to/#/@altphi:matrix.org) or [X](https://x.com/altphi) or [github](https://github.com/altphi).
 
