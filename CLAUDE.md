@@ -32,7 +32,7 @@ Static site blog generator for [log.j38.uk](https://log.j38.uk), deployed via Gi
 
 - **Posts** live in `posts/` as markdown files. Date-based filenames (`YYYY-MM-DD_HHMMSS.md`) sort newest-first; others sort alphabetically after them.
 - **Photos** live in `photos/` and are auto-wrapped as `photos`-category posts with `photo-` slug prefix.
-- **Categories** (exactly one per post, set via inline hashtag): `main`, `photos`, `tech`, `dailies`, `about`. Posts without a category get `#dailies` appended automatically by the build.
+- **Categories** (exactly one per post, set via inline hashtag): `main`, `photos`, `tech`, `math`, `dailies`, `links`, `about`, `cv`. Posts without a category get `#dailies` appended automatically by the build.
 - Additional hashtags become searchable tags (not categories).
 - The build will **error** if a post has multiple categories.
 - Frontmatter (optional `---` block) supports `title` and `date` fields.

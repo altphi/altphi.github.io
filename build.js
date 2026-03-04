@@ -11,7 +11,7 @@ const PHOTO_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
 const SITE_URL = 'https://log.j38.uk';
 
 // Categories shown as filter buttons (each post must have exactly one)
-const CATEGORIES = ['main', 'photos', 'tech', 'dailies', 'links', 'about'];
+const CATEGORIES = ['main', 'photos', 'tech', 'math', 'dailies', 'links', 'cv', 'about'];
 const DEFAULT_CATEGORY = 'dailies';
 
 function parseFrontmatter(content) {
