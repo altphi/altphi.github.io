@@ -11,6 +11,7 @@
 ### Techy Reading
 - [LWN.net](https://lwn.net/)
 - [Hacker Bits](https://hackerbits.com/)
+- [lobste.rs](https://lobste.rs/)
 
 ### Tools I enjoy
 - [NixOS](https://nixos.org/)
