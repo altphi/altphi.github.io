@@ -2,7 +2,7 @@
 title: Stephen Beck
 ---
 
-*Principal Software Architect* — beck@j38.uk — [log.j38.uk](https://log.j38.uk)
+*Principal Software Architect* — beck@j38.uk
 
 - Currently building adaptive testing engines in R and Rust — sub-50ms item selection using IRT, shadow-testing, and MIP solvers.
 - Last four companies either were acquired or 10x'd.
