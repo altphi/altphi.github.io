@@ -17,7 +17,8 @@ function filterPosts() {
   posts.forEach(post => {
     const category = post.dataset.category;
     const text = post.textContent.toLowerCase();
-    const matchesCategory = activeTab === 'all' || category === activeTab;
+    const hideFromAll = post.hasAttribute('data-hide-from-all');
+    const matchesCategory = activeTab === 'all' ? !hideFromAll : category === activeTab;
     const matchesSearch = !searchQuery || text.includes(searchQuery.toLowerCase());
     post.classList.toggle('hidden', !matchesCategory || !matchesSearch);
   });

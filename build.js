@@ -159,7 +159,7 @@ async function buildPost(filename, template) {
   };
 }
 
-async function buildPhoto(filename, template) {
+async function buildPhoto(filename, template, { hideFromAll = false } = {}) {
   const slug = 'photo-' + filename.replace(/\.[^.]+$/, '');
   const category = 'photos';
   const tags = [];
@@ -183,6 +183,7 @@ async function buildPhoto(filename, template) {
     category,
     tags,
     html,
+    hideFromAll,
   };
 }
 
@@ -192,7 +193,7 @@ async function buildIndex(posts, template) {
       const allTags = [post.category, ...post.tags];
       const tagsHtml = allTags.map(t => `<span class="tag" data-tag="${t}">${t}</span>`).join('');
       return `
-        <article class="post-preview" data-category="${post.category}" data-tags="${post.tags.join(',')}" data-slug="${post.slug}"${post.isPage ? ' data-page' : ''}>
+        <article class="post-preview" data-category="${post.category}" data-tags="${post.tags.join(',')}" data-slug="${post.slug}"${post.isPage ? ' data-page' : ''}${post.hideFromAll ? ' data-hide-from-all' : ''}>
           <!-- <div class="tags">${tagsHtml}</div> -->
           <div class="content">${post.html}</div>
         </article>
@@ -285,6 +286,18 @@ async function build() {
   const mdFiles = files.filter(f => f.endsWith('.md'));
   const markdownPosts = (await Promise.all(mdFiles.map(f => buildPost(f, postTemplate)))).filter(Boolean);
 
+  // Find photos referenced in markdown posts (these show in "photos" tab but not "all")
+  const referencedPhotos = new Set();
+  for (const post of markdownPosts) {
+    const refs = post.html.matchAll(/(?:src|href)="([^"]+)"/g);
+    for (const m of refs) {
+      const filename = m[1].replace(/^\//, '');
+      if (PHOTO_EXTENSIONS.some(ext => filename.toLowerCase().endsWith(ext))) {
+        referencedPhotos.add(filename);
+      }
+    }
+  }
+
   // Build photo posts
   let photoPosts = [];
   if (existsSync(PHOTOS_DIR)) {
@@ -296,19 +309,20 @@ async function build() {
       execSync(`exiftool -all= -overwrite_original ${PHOTOS_DIR}/*`, { stdio: 'ignore' });
     }
 
-    photoPosts = await Promise.all(photos.map(f => buildPhoto(f, postTemplate)));
+    photoPosts = await Promise.all(photos.map(f => buildPhoto(f, postTemplate, { hideFromAll: referencedPhotos.has(f) })));
     // Copy photos to output
     await cp(PHOTOS_DIR, OUTPUT_DIR, { recursive: true });
   }
 
   // Combine and sort: date-based posts first (newest first), then others
   const isDateBased = (slug) => /^(photo-)?\d{4}-\d{2}-\d{2}/.test(slug);
+  const dateKey = (slug) => slug.replace(/^photo-/, '');
   const posts = [...markdownPosts, ...photoPosts].sort((a, b) => {
     const aDate = isDateBased(a.slug);
     const bDate = isDateBased(b.slug);
     if (aDate && !bDate) return -1;
     if (!aDate && bDate) return 1;
-    return b.slug.localeCompare(a.slug);
+    return dateKey(b.slug).localeCompare(dateKey(a.slug));
   });
 
   // Build index, sitemap, and RSS feed

@@ -1,8 +1,6 @@
 This blog is a place for me to keep quotations, projects, notes, thoughts,
 photos.  There is no comment system here (yet) but feel free to reach out on
-[matrix](https://matrix.to/#/@altphi:matrix.org) or [X](https://x.com/altphi) or [github](https://github.com/altphi) or [email](mailto:beck@j38.uk).
-
-The source code for this blog is [here](https://github.com/altphi/altphi.github.io).
+[matrix](https://matrix.to/#/@altphi:matrix.org) or [X](https://x.com/altphi) or [github](https://github.com/altphi) or [email](mailto:beck@j38.uk).  The source code for this blog is [here](https://github.com/altphi/altphi.github.io).
 
 ## How to navigate
 - Hit `?` to see keyboard shortcuts.
@@ -14,3 +12,4 @@ interest in Computer Science as well as Greek & Latin classics with a healthy
 dose of Philosophy.  I enjoy a little [photography](?c=photos) as well.
 
 #about #page
+
