@@ -3,16 +3,12 @@ import { existsSync } from 'fs';
 import { execSync } from 'child_process';
 import { Marked } from 'marked';
 import markedFootnote from 'marked-footnote';
+import { POSTS_DIR, CATEGORIES, DEFAULT_CATEGORY } from './config.js';
 
-const POSTS_DIR = 'posts';
 const PHOTOS_DIR = 'photos';
 const OUTPUT_DIR = 'build';
 const PHOTO_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
 const SITE_URL = 'https://log.j38.uk';
-
-// Categories shown as filter buttons (each post must have exactly one)
-const CATEGORIES = ['main', 'photos', 'tech', 'math', 'dailies', 'links', 'cv', 'about'];
-const DEFAULT_CATEGORY = 'dailies';
 
 function parseFrontmatter(content) {
   const match = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
@@ -143,11 +139,7 @@ async function buildPost(filename, template) {
     .replaceAll('{{slug}}', slug)
     .replaceAll('{{description}}', escapeXml(description));
 
-  const isPage = tags.includes('page');
-
-  if (!isPage) {
-    await writeFile(`${OUTPUT_DIR}/${slug}.html`, postHtml);
-  }
+  await writeFile(`${OUTPUT_DIR}/${slug}.html`, postHtml);
 
   return {
     slug,
@@ -155,7 +147,7 @@ async function buildPost(filename, template) {
     category,
     tags,
     html,
-    isPage,
+    hideFromAll: category === 'page',
   };
 }
 
@@ -193,7 +185,7 @@ async function buildIndex(posts, template) {
       const allTags = [post.category, ...post.tags];
       const tagsHtml = allTags.map(t => `<span class="tag" data-tag="${t}">${t}</span>`).join('');
       return `
-        <article class="post-preview" data-category="${post.category}" data-tags="${post.tags.join(',')}" data-slug="${post.slug}"${post.isPage ? ' data-page' : ''}${post.hideFromAll ? ' data-hide-from-all' : ''}>
+        <article class="post-preview" data-category="${post.category}" data-tags="${post.tags.join(',')}" data-slug="${post.slug}"${post.hideFromAll ? ' data-hide-from-all' : ''}>
           <!-- <div class="tags">${tagsHtml}</div> -->
           <div class="content">${post.html}</div>
         </article>
@@ -203,7 +195,7 @@ async function buildIndex(posts, template) {
 
   const usedCategories = [...new Set(posts.map(p => p.category))];
   const filterHtml = CATEGORIES
-    .filter(c => usedCategories.includes(c))
+    .filter(c => usedCategories.includes(c) && c !== 'page')
     .map(c => `<button class="category-filter${c === 'main' ? ' active' : ''}" data-category="${c}">${c}</button>`)
     .join('') +
     `<button class="category-filter" data-category="all">all</button>`;

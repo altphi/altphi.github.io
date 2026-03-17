@@ -67,4 +67,4 @@ title: Stephen Beck
 
 TypeScript, JavaScript, Node.js, React, Angular, Rust, R, Clojure, Kotlin, SQL (Postgres, MySQL), GraphQL, Docker, Kubernetes (EKS), Terraform, AWS (Lambda, RDS, EKS), NixOS/Linux, Ansible, OpenAPI, Tailwind
 
-#cv #page
+#page

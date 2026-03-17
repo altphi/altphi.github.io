@@ -1,15 +1,13 @@
-This blog is a place for me to keep quotations, projects, notes, thoughts,
-photos.  There is no comment system here (yet) but feel free to reach out on
-[matrix](https://matrix.to/#/@altphi:matrix.org) or [X](https://x.com/altphi) or [github](https://github.com/altphi) or [email](mailto:beck@j38.uk).  The source code for this blog is [here](https://github.com/altphi/altphi.github.io).
+Hi I'm Stephen.  This is my place to keep quotations, projects, notes,
+thoughts, photos.  There is no comment system here but feel free to reach out
+on [matrix](https://matrix.to/#/@altphi:matrix.org) or [X](https://x.com/altphi) or [github](https://github.com/altphi) or [email](mailto:beck@j38.uk).  
 
-## How to navigate
-- Hit `?` to see keyboard shortcuts.
-- Filters at the top toggle posts on and off.
+Hit `?` to see keyboard shortcuts
 
-## What to expect
-Some rather disparate content appears here as I have background and retain
-interest in Computer Science as well as Greek & Latin classics with a healthy
-dose of Philosophy.  I enjoy a little [photography](?c=photos) as well.
+See also
+- [projects](/?c=projects)
+- [cv/resume](/cv.html)
+- [source code](https://github.com/altphi/altphi.github.io) for this blog
 
-#about #page
+#about
 

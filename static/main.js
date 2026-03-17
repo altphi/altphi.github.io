@@ -215,7 +215,7 @@ document.addEventListener('keydown', (e) => {
     e.preventDefault();
     index = Math.max(index - 1, 0);
     focusPost(visible, index);
-  } else if (e.key === 'Enter' && current && !current.hasAttribute('data-page')) {
+  } else if (e.key === 'Enter' && current) {
     const slug = current.dataset.slug;
     if (slug) window.location.href = slug + '.html';
   } else if (e.key === 'Escape') {
@@ -243,15 +243,14 @@ function focusPost(visible, index) {
 
 // Post click handlers: click to open, alt-click to select
 posts.forEach(post => {
-  const isPage = post.hasAttribute('data-page');
-  if (!isPage) post.style.cursor = 'pointer';
+  post.style.cursor = 'pointer';
   post.addEventListener('click', (e) => {
     if (e.altKey) {
       // Alt-click: select without opening
       e.preventDefault();
       posts.forEach(p => p.classList.remove('focused'));
       post.classList.add('focused');
-    } else if (!isPage) {
+    } else {
       // Normal click: open post
       const slug = post.dataset.slug;
       if (slug) window.location.href = slug + '.html';
