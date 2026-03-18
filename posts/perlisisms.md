@@ -20,13 +20,17 @@
   
 > You think you know when you can learn, are more sure when you can write, even more when you can teach, but certain when you can program.
   
-> One man's constant is another man's variable.
+> In programming, everything we do is a special case of something more general -- and often we know it too quickly.
+  
+> A programming language is low level when its programs require attention to the irrelevant.
   
 > Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
   
-> Every program is a part of some other program and rarely fits.
+> One man's constant is another man's variable.
   
-> A programming language is low level when its programs require attention to the irrelevant.
+> Editing is a rewording activity.
+  
+> Every program is a part of some other program and rarely fits.
   
 > Programming is an unnatural act.
   
@@ -48,8 +52,6 @@
   
 > Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
   
-> If a listener nods his head when you're explaining your program, wake him up.
-  
 > A program without a loop and a structured variable isn't worth writing.
   
 > A language that doesn't affect the way you think about programming, is not worth knowing.
@@ -69,8 +71,6 @@
 > Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?
   
 > For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
-  
-> In programming, everything we do is a special case of something more general -- and often we know it too quickly.
   
 > Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.
   
@@ -220,8 +220,6 @@
   
 > Think of it! With VLSI we can pack 100 ENIACS in 1 sq. cm.
   
-> Editing is a rewording activity.
-  
 > Why did the Roman Empire collapse? What is Latin for office automation?
   
 > The eleventh commandment was "Thou Shalt Compute" or "Thou Shalt Not Compute" - I forget which.
@@ -234,11 +232,13 @@
   
 > Most people find the concept of programming obvious, but the doing impossible.
   
+> If a listener nods his head when you're explaining your program, wake him up.
+  
 > The best book on programming for the layman is "Alice in Wonderland"; but that's because it's the best book on anything for the layman.
   
 > It goes against the grain of modern education to teach children to program. What fun is there in making plans, acquiring discipline in organizing thoughts, devoting attention to detail and learning to be self-critical?
   
-> If you can imagine a society in which the computer- robot is the only menial, you can imagine anything.
+> If you can imagine a society in which the computer-robot is the only menial, you can imagine anything.
   
 > Adapting old programs to fit new machines usually means adapting new machines to behave like old ones.
   
