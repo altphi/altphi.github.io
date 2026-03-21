@@ -1,6 +1,6 @@
 # Apothegms of Alan Perlis, aka Perlisisms
 
-(gradually being reordered here according to my most to least favorite)
+(gradually being reordered here from my most to least favorite)
 
 > Make no mistake about it: Computers process numbers - not symbols. We measure our understanding (and control) by the extent to which we can arithmetize an activity.
   
@@ -146,6 +146,8 @@
   
 > Documentation is like term insurance: It satisfies because almost no one who subscribes to it depends on its benefits.
   
+> Prolonged contact with the computer turns mathematicians into clerks and vice versa.
+  
 > An adequate bootstrap is a contradiction in terms.
   
 > It is not a language's weakness but its strengths that control the gradient of its change: Alas, a language never escapes its embryonic sac.
@@ -158,17 +160,15 @@
   
 > The cybernetic exchange between man, computer and algorithm is like a game of musical chairs: The frantic search for balance always leaves one of the three standing ill at ease.
   
+> What is the difference between a Turing machine and the modern computer? It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
+  
 > If your computer speaks English, it was probably made in Japan.
   
 > A year spent in artificial intelligence is enough to make one believe in God.
   
-> Prolonged contact with the computer turns mathematicians into clerks and vice versa.
-  
 > In computing, turning the obvious into the useful is a living definition of the word "frustration".
   
 > We are on the verge: Today our program proved Fermat's next-to-last theorem.
-  
-> What is the difference between a Turing machine and the modern computer? It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
   
 > Motto for a research laboratory: What we work on today, others will first think of tomorrow.
   
