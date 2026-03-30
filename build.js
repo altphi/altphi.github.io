@@ -3,7 +3,8 @@ import { existsSync } from 'fs';
 import { execSync } from 'child_process';
 import { Marked } from 'marked';
 import markedFootnote from 'marked-footnote';
-import { POSTS_DIR, CATEGORIES, DEFAULT_CATEGORY } from './config.js';
+import { POSTS_DIR, NAV, DEFAULT_CATEGORY } from './config.js';
+const CATEGORIES = NAV.filter(e => e.type === 'category').map(e => e.name).concat('page');
 
 const PHOTOS_DIR = 'photos';
 const OUTPUT_DIR = 'build';
@@ -193,16 +194,40 @@ async function buildIndex(posts, template) {
     })
     .join('');
 
-  const usedCategories = [...new Set(posts.map(p => p.category))];
-  const filterHtml = CATEGORIES
-    .filter(c => usedCategories.includes(c) && c !== 'page')
-    .map(c => `<button class="category-filter${c === 'main' ? ' active' : ''}" data-category="${c}">${c}</button>`)
+  // Collect page posts matched by slug to NAV page entries
+  const pageNavEntries = NAV.filter(e => e.type === 'page');
+  const postsBySlug = new Map(posts.map(p => [p.slug, p]));
+
+  // Build hidden page sections for inline display
+  const pagesHtml = pageNavEntries
+    .filter(e => postsBySlug.has(e.name))
+    .map(e => {
+      const post = postsBySlug.get(e.name);
+      return `<section class="page-content" data-page="${e.name}" hidden><div class="content">${post.html}</div></section>`;
+    })
+    .join('\n');
+
+  // Build nav tabs from NAV config
+  const usedCategories = new Set(posts.map(p => p.category));
+  const filterHtml = NAV
+    .filter(e => {
+      if (e.type === 'category') return usedCategories.has(e.name);
+      if (e.type === 'page') return postsBySlug.has(e.name);
+      return false;
+    })
+    .map(e => {
+      if (e.type === 'page') {
+        return `<button class="category-filter" data-page="${e.name}">${e.name}</button>`;
+      }
+      return `<button class="category-filter${e.name === 'main' ? ' active' : ''}" data-category="${e.name}">${e.name}</button>`;
+    })
     .join('') +
     `<button class="category-filter" data-category="all">all</button>`;
 
   const indexHtml = template
     .replace('{{posts}}', postsHtml)
-    .replace('{{filters}}', filterHtml);
+    .replace('{{filters}}', filterHtml)
+    .replace('{{pages}}', pagesHtml);
 
   await writeFile(`${OUTPUT_DIR}/index.html`, indexHtml);
 }

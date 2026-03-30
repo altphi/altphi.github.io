@@ -24,5 +24,5 @@ In a past life I studied classics.   Trying to keep the flame alive by reading a
 ## Powerlifting
 I use the [Hepburn Method](/hepburn_method).
 
-#projects
+#page
 

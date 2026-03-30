@@ -227,6 +227,10 @@ article header {
   display: none;
 }
 
+.page-content {
+  margin-bottom: 3rem;
+}
+
 html.loading-filter .category-filter.active {
   color: var(--text-muted);
   border-bottom-color: transparent;

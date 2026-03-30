@@ -3,6 +3,8 @@ const filters = document.querySelectorAll('.category-filter');
 const posts = document.querySelectorAll('.post-preview');
 const searchInput = document.querySelector('.search');
 let activeTab = 'main';
+const pageSections = document.querySelectorAll('.page-content');
+const postsContainer = document.querySelector('.posts');
 let searchQuery = '';
 let lastKey = '';
 let lastKeyTime = 0;
@@ -14,6 +16,11 @@ const filtersEl = document.querySelector('.filters');
 if (filtersEl) filtersEl.appendChild(countEl);
 
 function filterPosts() {
+  const activePage = document.querySelector('.page-content:not([hidden])');
+  if (activePage) {
+    countEl.textContent = '';
+    return;
+  }
   posts.forEach(post => {
     const category = post.dataset.category;
     const text = post.textContent.toLowerCase();
@@ -26,11 +33,22 @@ function filterPosts() {
   countEl.textContent = visible.length + ' of ' + posts.length;
 }
 
-function setActiveTab(category) {
-  activeTab = category;
+function setActiveTab(tab) {
+  activeTab = tab;
   filters.forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.category === category);
+    const isMatch = (btn.dataset.category === tab) || (btn.dataset.page === tab);
+    btn.classList.toggle('active', isMatch);
   });
+
+  const pageSection = document.querySelector(`.page-content[data-page="${tab}"]`);
+  if (pageSection) {
+    postsContainer.hidden = true;
+    pageSections.forEach(s => s.hidden = true);
+    pageSection.hidden = false;
+  } else {
+    postsContainer.hidden = false;
+    pageSections.forEach(s => s.hidden = true);
+  }
 }
 
 function updateUrl() {
@@ -65,22 +83,24 @@ function init() {
 // Category filtering: tab selection
 filters.forEach(btn => {
   btn.addEventListener('click', () => {
-    const cat = btn.dataset.category;
-    setActiveTab(cat);
+    const tab = btn.dataset.category || btn.dataset.page;
+    setActiveTab(tab);
     const wasHidden = new Set([...posts].filter(p => p.classList.contains('hidden')));
     filterPosts();
     updateUrl();
 
-    // Pulse newly-revealed posts and badge
-    const revealed = [...posts].filter(p => wasHidden.has(p) && !p.classList.contains('hidden'));
-    revealed.forEach(p => p.classList.remove('post-reveal'));
-    countEl.classList.remove('post-reveal');
-    requestAnimationFrame(() => {
+    // Pulse newly-revealed posts (only for category tabs)
+    if (!document.querySelector('.page-content:not([hidden])')) {
+      const revealed = [...posts].filter(p => wasHidden.has(p) && !p.classList.contains('hidden'));
+      revealed.forEach(p => p.classList.remove('post-reveal'));
+      countEl.classList.remove('post-reveal');
       requestAnimationFrame(() => {
-        revealed.forEach(p => p.classList.add('post-reveal'));
-        countEl.classList.add('post-reveal');
+        requestAnimationFrame(() => {
+          revealed.forEach(p => p.classList.add('post-reveal'));
+          countEl.classList.add('post-reveal');
+        });
       });
-    });
+    }
   });
 });
 
@@ -88,6 +108,10 @@ filters.forEach(btn => {
 if (searchInput) {
   searchInput.addEventListener('input', (e) => {
     searchQuery = e.target.value;
+    // If a page is showing and user types a search, switch to all posts
+    if (document.querySelector('.page-content:not([hidden])') && searchQuery) {
+      setActiveTab('all');
+    }
     filterPosts();
     updateUrl();
   });
@@ -103,7 +127,7 @@ modal.innerHTML = `
   <div class="modal-content">
     <h3>Keyboard Shortcuts</h3>
     <dl>
-      <dt><kbd>1</kbd>–<kbd>${filters.length}</kbd></dt><dd>Switch tab</dd>
+      <dt><kbd>0</kbd>–<kbd>${filters.length - 1}</kbd></dt><dd>Switch tab</dd>
       <dt><kbd>/</kbd></dt><dd>Focus search</dd>
       <dt><kbd>j</kbd> / <kbd>↓</kbd></dt><dd>Next post</dd>
       <dt><kbd>k</kbd> / <kbd>↑</kbd></dt><dd>Previous post</dd>
@@ -137,10 +161,10 @@ document.addEventListener('keydown', (e) => {
     return;
   }
 
-  // Number keys switch tabs
+  // Number keys switch tabs (0-indexed)
   const num = parseInt(e.key);
-  if (!inSearch && num >= 1 && num <= filters.length) {
-    filters[num - 1].click();
+  if (!inSearch && !isNaN(num) && num >= 0 && num < filters.length) {
+    filters[num].click();
     return;
   }
 
@@ -175,7 +199,7 @@ document.addEventListener('keydown', (e) => {
   }
 
   // Only on index page with posts, and not while typing
-  if (posts.length === 0 || inSearch) return;
+  if (posts.length === 0 || inSearch || document.querySelector('.page-content:not([hidden])')) return;
 
   const visible = [...posts].filter(p => !p.classList.contains('hidden'));
   const current = document.querySelector('.post-preview.focused');

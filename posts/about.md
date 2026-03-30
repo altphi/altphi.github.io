@@ -6,8 +6,8 @@ Hit `?` to see keyboard shortcuts
 
 See also
 - [projects](/?c=projects)
-- [cv/resume](/cv.html)
+- [cv/resume](/?c=cv)
 - [source code](https://github.com/altphi/altphi.github.io) for this blog
 
-#about
+#page
 
