@@ -260,7 +260,9 @@ function focusPost(visible, index) {
   if (visible[index]) {
     visible[index].classList.add('focused');
     const rect = visible[index].getBoundingClientRect();
-    const targetY = window.scrollY + rect.top - window.innerHeight * 0.25;
+    const isPhoto = visible[index].dataset.category === 'photos';
+    const offset = isPhoto ? 20 : window.innerHeight * 0.25;
+    const targetY = window.scrollY + rect.top - offset;
     window.scrollTo({ top: targetY, behavior: 'smooth' });
   }
 }
