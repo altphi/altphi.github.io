@@ -4,7 +4,7 @@ title: Stephen Beck
 
 *Principal Software Architect* — beck@j38.uk
 
-- Currently building adaptive testing engines in R and Rust — sub-50ms item selection using Item Response Thery, shadow-testing, and MIP solvers.
+- Currently building adaptive testing engines in R and Rust — sub-50ms item selection using Item Response Theory, shadow-testing, and MIP solvers.
 - Last four companies either were acquired or 10x'd.
 - Lifelong interest in languages — programming (Pascal onward) and ancient (Latin, Greek).
 - Promotes the practice of XP, esp. pair programming and Test Driven Development.
