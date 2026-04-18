@@ -26,6 +26,8 @@
   
 > Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
   
+> Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
+  
 > One man's constant is another man's variable.
   
 > Editing is a rewording activity.
@@ -49,8 +51,6 @@
 > In the long run every program becomes rococo - then rubble.
   
 > Everything should be built top-down, except the first time.
-  
-> Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
   
 > A program without a loop and a structured variable isn't worth writing.
   
