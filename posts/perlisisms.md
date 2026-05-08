@@ -24,6 +24,8 @@
   
 > A programming language is low level when its programs require attention to the irrelevant.
   
+> One can't proceed from the informal to the formal by formal means.
+  
 > Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
   
 > Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
@@ -203,8 +205,6 @@
 > We will never run out of things to program as long as there is a single program around.
   
 > Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve.
-  
-> One can't proceed from the informal to the formal by formal means.
   
 > Purely applicative languages are poorly applicable.
   
