@@ -234,8 +234,6 @@
   
 > If a listener nods his head when you're explaining your program, wake him up.
   
-> The best book on programming for the layman is "Alice in Wonderland"; but that's because it's the best book on anything for the layman.
-  
 > It goes against the grain of modern education to teach children to program. What fun is there in making plans, acquiring discipline in organizing thoughts, devoting attention to detail and learning to be self-critical?
   
 > If you can imagine a society in which the computer-robot is the only menial, you can imagine anything.
