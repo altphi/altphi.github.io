@@ -106,8 +106,6 @@
   
 > When we understand knowledge-based systems, it will be as before -- except our fingertips will have been singed.
   
-> Bringing computers into the home won't change either one, but may revitalize the corner saloon.
-  
 > Systems have sub-systems and sub-systems have sub- systems and so on ad infinitum - which is why we're always starting over.
   
 > So many good ideas are never heard from again once they embark in a voyage on the semantic gulf.
@@ -241,5 +239,7 @@
 > Adapting old programs to fit new machines usually means adapting new machines to behave like old ones.
   
 > We have the mini and the micro computer. In what semantic niche would the pico computer fall?
-
+  
+> Bringing computers into the home won't change either one, but may revitalize the corner saloon.
+  
 #tech
