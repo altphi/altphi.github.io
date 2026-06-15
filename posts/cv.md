@@ -14,7 +14,7 @@ title: Stephen Beck
 ### Principal Software Architect — [Classic Learning Test](https://www.cltexam.com/)
 *Dec 2020 – Present*
 
-- Served as sole systems developer (SRE, backend, frontend) through major
+- Served as sole systems developer (SRE, backend, frontend) and CTO through major
   growth phase; now principal engineer/architect for team of 10.
 - Primary code reviewer and architect of shared frameworks and patterns within
   CLT apps.
@@ -65,6 +65,6 @@ title: Stephen Beck
 
 ## Skills
 
-TypeScript, JavaScript, Node.js, React, Angular, Rust, R, Clojure, Kotlin, SQL (Postgres, MySQL), GraphQL, Docker, Kubernetes (EKS), Terraform, AWS (Lambda, RDS, EKS), NixOS/Linux, Ansible, OpenAPI, Tailwind
+Rust, R, TypeScript, JavaScript, Node.js, React, SQL (Postgres, MySQL), NixOS/Linux, Angular, Clojure, Kotlin, GraphQL, Docker, Kubernetes (EKS), Terraform, AWS (Lambda, RDS, EKS), Ansible, OpenAPI, Tailwind
 
 #page
