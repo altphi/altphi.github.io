@@ -216,7 +216,7 @@ article header {
   padding: 1.5rem 1rem;
   background: var(--focus-bg);
   box-shadow: 0 0 0 100vmax var(--focus-bg);
-  clip-path: inset(0 -100vmax);
+  clip-path: inset(-1.5rem -100vmax 0);
 }
 
 .post-preview header {
