@@ -95,7 +95,7 @@ Clicking the header "log.j38.uk" resets to the default view.
 
 ## Photos
 
-Photos placed in the `photos/` directory are automatically built as posts with the `photos` category. All metadata (EXIF, GPS, camera info, etc.) is automatically stripped during build for privacy.
+Photos placed in the `photos/` directory are automatically built as posts with the `photos` category unless they are referenced from a markdown post. Referenced photos remain available to that post, but are not shown as standalone entries in the `photos` category. All metadata (EXIF, GPS, camera info, etc.) is automatically stripped during build for privacy.
 
 ## Output
 

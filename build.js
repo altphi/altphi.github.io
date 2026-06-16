@@ -11,6 +11,22 @@ const OUTPUT_DIR = 'build';
 const PHOTO_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
 const SITE_URL = 'https://log.j38.uk';
 
+function isPhotoFile(filename) {
+  return PHOTO_EXTENSIONS.some(ext => filename.toLowerCase().endsWith(ext));
+}
+
+function referencedPhotoFilename(url) {
+  if (/^[a-z][a-z0-9+.-]*:/i.test(url) || url.startsWith('//')) return null;
+
+  let filename = url.split(/[?#]/)[0].replace(/^\/+/, '').replace(/^\.\//, '');
+  if (filename.startsWith(`${PHOTOS_DIR}/`)) {
+    filename = filename.slice(PHOTOS_DIR.length + 1);
+  }
+
+  if (!filename || filename.includes('/') || !isPhotoFile(filename)) return null;
+  return filename;
+}
+
 function parseFrontmatter(content) {
   const match = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
   if (!match) return { metadata: {}, body: content };
@@ -152,7 +168,7 @@ async function buildPost(filename, template) {
   };
 }
 
-async function buildPhoto(filename, template, { hideFromAll = false } = {}) {
+async function buildPhoto(filename, template) {
   const slug = 'photo-' + filename.replace(/\.[^.]+$/, '');
   const category = 'photos';
   const tags = [];
@@ -176,7 +192,6 @@ async function buildPhoto(filename, template, { hideFromAll = false } = {}) {
     category,
     tags,
     html,
-    hideFromAll,
   };
 }
 
@@ -303,13 +318,13 @@ async function build() {
   const mdFiles = files.filter(f => f.endsWith('.md'));
   const markdownPosts = (await Promise.all(mdFiles.map(f => buildPost(f, postTemplate)))).filter(Boolean);
 
-  // Find photos referenced in markdown posts (these show in "photos" tab but not "all")
+  // Photos embedded in markdown are part of that post, not standalone photo posts.
   const referencedPhotos = new Set();
   for (const post of markdownPosts) {
     const refs = post.html.matchAll(/(?:src|href)="([^"]+)"/g);
     for (const m of refs) {
-      const filename = m[1].replace(/^\//, '');
-      if (PHOTO_EXTENSIONS.some(ext => filename.toLowerCase().endsWith(ext))) {
+      const filename = referencedPhotoFilename(m[1]);
+      if (filename) {
         referencedPhotos.add(filename);
       }
     }
@@ -319,14 +334,15 @@ async function build() {
   let photoPosts = [];
   if (existsSync(PHOTOS_DIR)) {
     const photoFiles = await readdir(PHOTOS_DIR);
-    const photos = photoFiles.filter(f => PHOTO_EXTENSIONS.some(ext => f.toLowerCase().endsWith(ext)));
+    const photos = photoFiles.filter(isPhotoFile);
+    const standalonePhotos = photos.filter(f => !referencedPhotos.has(f));
 
     // Strip metadata from photos
     if (photos.length > 0) {
       execSync(`exiftool -all= -overwrite_original ${PHOTOS_DIR}/*`, { stdio: 'ignore' });
     }
 
-    photoPosts = await Promise.all(photos.map(f => buildPhoto(f, postTemplate, { hideFromAll: referencedPhotos.has(f) })));
+    photoPosts = await Promise.all(standalonePhotos.map(f => buildPhoto(f, postTemplate)));
     // Copy photos to output
     await cp(PHOTOS_DIR, OUTPUT_DIR, { recursive: true });
   }
