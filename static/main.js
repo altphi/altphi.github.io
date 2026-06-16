@@ -104,6 +104,12 @@ filters.forEach(btn => {
   });
 });
 
+function moveTab(offset) {
+  const currentIndex = [...filters].findIndex(btn => btn.classList.contains('active'));
+  const next = filters[currentIndex + offset];
+  if (next) next.click();
+}
+
 // Search filtering
 if (searchInput) {
   searchInput.addEventListener('input', (e) => {
@@ -128,6 +134,7 @@ modal.innerHTML = `
     <h3>Keyboard Shortcuts</h3>
     <dl>
       <dt><kbd>0</kbd>–<kbd>${filters.length - 1}</kbd></dt><dd>Switch tab</dd>
+      <dt><kbd>h</kbd> / <kbd>l</kbd></dt><dd>Previous / next tab</dd>
       <dt><kbd>/</kbd></dt><dd>Focus search</dd>
       <dt><kbd>j</kbd> / <kbd>↓</kbd></dt><dd>Next post</dd>
       <dt><kbd>k</kbd> / <kbd>↑</kbd></dt><dd>Previous post</dd>
@@ -195,6 +202,13 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'L' && !inSearch) {
     e.preventDefault();
     window.history.forward();
+    return;
+  }
+
+  // h/l - move between tabs
+  if ((e.key === 'h' || e.key === 'l') && !inSearch) {
+    e.preventDefault();
+    moveTab(e.key === 'h' ? -1 : 1);
     return;
   }
 

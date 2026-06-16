@@ -76,7 +76,8 @@ Clicking the header "log.j38.uk" resets to the default view.
 
 | Key | Action |
 |-----|--------|
-| `1`–`7` | Switch tab |
+| Number key | Switch tab |
+| `h` / `l` | Previous / next tab |
 | `/` | Focus search |
 | `j` / `↓` | Next post |
 | `k` / `↑` | Previous post |
