@@ -297,8 +297,3 @@ posts.forEach(post => {
     }
   });
 });
-
-// Add focus styles
-const style = document.createElement('style');
-style.textContent = `.post-preview.focused { background: var(--focus-bg); margin-left: -1rem; margin-right: -1rem; padding: 1.5rem 1rem; margin-top: -1.5rem; border-radius: 4px; }`;
-document.head.appendChild(style);

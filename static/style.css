@@ -210,6 +210,15 @@ article header {
   border-bottom: 1px solid var(--border);
 }
 
+.post-preview.focused {
+  position: relative;
+  margin: -1.5rem -1rem 3rem;
+  padding: 1.5rem 1rem;
+  background: var(--focus-bg);
+  box-shadow: 0 0 0 100vmax var(--focus-bg);
+  clip-path: inset(0 -100vmax);
+}
+
 .post-preview header {
   margin-bottom: 1rem;
 }
