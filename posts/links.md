@@ -12,6 +12,7 @@
 ### Tools I enjoy
 - [NixOS](https://nixos.org/)
 - [neovim](https://neovim.io/)
+- [jj](https://www.jj-vcs.dev/)
 - [niri](https://github.com/YaLTeR/niri?tab=readme-ov-file#niri)
 
 ### Greek & Latin
