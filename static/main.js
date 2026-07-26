@@ -85,22 +85,8 @@ filters.forEach(btn => {
   btn.addEventListener('click', () => {
     const tab = btn.dataset.category || btn.dataset.page;
     setActiveTab(tab);
-    const wasHidden = new Set([...posts].filter(p => p.classList.contains('hidden')));
     filterPosts();
     updateUrl();
-
-    // Pulse newly-revealed posts (only for category tabs)
-    if (!document.querySelector('.page-content:not([hidden])')) {
-      const revealed = [...posts].filter(p => wasHidden.has(p) && !p.classList.contains('hidden'));
-      revealed.forEach(p => p.classList.remove('post-reveal'));
-      countEl.classList.remove('post-reveal');
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          revealed.forEach(p => p.classList.add('post-reveal'));
-          countEl.classList.add('post-reveal');
-        });
-      });
-    }
   });
 });
 

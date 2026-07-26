@@ -147,6 +147,8 @@ async function buildPost(filename, template) {
   const description = plainText.slice(0, 160) + (plainText.length > 160 ? '...' : '');
 
   const tagsHtml = [category, ...tags].map(t => `<span class="tag">${t}</span>`).join('');
+  const hasMath = latexBlocks.length > 0;
+  const mathClass = hasMath ? 'math-loading' : '';
 
   const postHtml = template
     .replaceAll('{{title}}', metadata.title || slug)
@@ -154,7 +156,8 @@ async function buildPost(filename, template) {
     .replaceAll('{{tags}}', tagsHtml)
     .replaceAll('{{content}}', html)
     .replaceAll('{{slug}}', slug)
-    .replaceAll('{{description}}', escapeXml(description));
+    .replaceAll('{{description}}', escapeXml(description))
+    .replaceAll('{{math_class}}', mathClass);
 
   await writeFile(`${OUTPUT_DIR}/${slug}.html`, postHtml);
 
@@ -165,6 +168,7 @@ async function buildPost(filename, template) {
     tags,
     html,
     hideFromAll: category === 'page',
+    hasMath,
   };
 }
 
@@ -182,7 +186,8 @@ async function buildPhoto(filename, template) {
     .replaceAll('{{tags}}', tagsHtml)
     .replaceAll('{{content}}', html)
     .replaceAll('{{slug}}', slug)
-    .replaceAll('{{description}}', description);
+    .replaceAll('{{description}}', description)
+    .replaceAll('{{math_class}}', '');
 
   await writeFile(`${OUTPUT_DIR}/${slug}.html`, postHtml);
 
@@ -192,6 +197,7 @@ async function buildPhoto(filename, template) {
     category,
     tags,
     html,
+    hasMath: false,
   };
 }
 
@@ -200,8 +206,13 @@ async function buildIndex(posts, template) {
     .map(post => {
       const allTags = [post.category, ...post.tags];
       const tagsHtml = allTags.map(t => `<span class="tag" data-tag="${t}">${t}</span>`).join('');
+      const isHidden = post.category !== 'main';
+      const classes = ['post-preview'];
+      if (isHidden) classes.push('hidden');
+      if (post.hasMath) classes.push('math-loading');
+      const classAttr = `class="${classes.join(' ')}"`;
       return `
-        <article class="post-preview" data-category="${post.category}" data-tags="${post.tags.join(',')}" data-slug="${post.slug}"${post.hideFromAll ? ' data-hide-from-all' : ''}>
+        <article ${classAttr} data-category="${post.category}" data-tags="${post.tags.join(',')}" data-slug="${post.slug}"${post.hideFromAll ? ' data-hide-from-all' : ''}>
           <!-- <div class="tags">${tagsHtml}</div> -->
           <div class="content">${post.html}</div>
         </article>
@@ -218,7 +229,10 @@ async function buildIndex(posts, template) {
     .filter(e => postsBySlug.has(e.name))
     .map(e => {
       const post = postsBySlug.get(e.name);
-      return `<section class="page-content" data-page="${e.name}" hidden><div class="content">${post.html}</div></section>`;
+      const classes = ['page-content'];
+      if (post.hasMath) classes.push('math-loading');
+      const classAttr = ` class="${classes.join(' ')}"`;
+      return `<section${classAttr} data-page="${e.name}" hidden><div class="content">${post.html}</div></section>`;
     })
     .join('\n');
 
