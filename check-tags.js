@@ -1,5 +1,6 @@
 import { readdir, readFile } from 'fs/promises';
-import { POSTS_DIR, CATEGORIES } from './config.js';
+import { POSTS_DIR, NAV } from './config.js';
+const CATEGORIES = NAV.filter(e => e.type === 'category').map(e => e.name).concat('page');
 
 function extractHashtags(content) {
   const withoutCode = content
