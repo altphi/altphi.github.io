@@ -4,29 +4,24 @@ title: Stephen Beck
 
 *Principal Software Architect* — beck@j38.uk
 
-- Currently building adaptive testing engines in R and Rust — sub-50ms item selection using Item Response Theory, shadow-testing, and MIP solvers.
+- Programmer across the product and the system.
 - Last four companies either were acquired or 10x'd.
 - Lifelong interest in languages — programming (Pascal onward) and ancient (Latin, Greek).
-- Promotes the practice of XP, esp. pair programming and Test Driven Development.
+- Keeps a small farm.
 
 ## Work
 
 ### Principal Software Architect — [Classic Learning Test](https://www.cltexam.com/)
 *Dec 2020 – Present*
 
-- Served as sole systems developer (SRE, backend, frontend) and CTO through major
-  growth phase; now principal engineer/architect for team of 10.
-- Primary code reviewer and architect of shared frameworks and patterns within
-  CLT apps.
+- Built adaptive testing (CAT) engine in Rust using IRT data, shadow-testing and MIP solvers for constraint-based optimization.
+- Served as sole systems developer (SRE, backend, frontend) and CTO through major growth phase; now principal engineer/architect for team of 10.
+- Primary code reviewer and architect of shared frameworks. Set the coding standards and the automated checks that hold incoming changes to them (tests, lint, CI, and Jev for classification according to those standards).
+- Set the team's testing practice: some tests before, when they shape the design; some after, to pin behavior; a broader suite for errors in incoming changes.
 - Replaced PHP monolith with modern Node + React (both TypeScript).
-- Mentored and guided junior developers through pair programming and thoughtful
-  code review.
-- Expertise gained in E2E Load Testing, AWS (Lambda, RDS tuning, Kubernetes on
-  EKS and autoscaling), TypeScript, OpenAPI Codegen, React, and Tailwind.
-- Currently building adaptive testing (CAT) engines in R and Rust using IRT
-  data with shadow-testing and MIP solvers for constraint-based optimization,
-  targeting sub-50ms item selection at scale.
-- Domain knowledge gained in psychometric adaptive testing and UX for students.
+- Designed the UX for the lower-grade platform (CLT3-8), launched in 2024.
+- Load-tested the exam platform end to end and tuned RDS.
+- Mentored and guided junior developers through pair programming and thoughtful code review.
 
 ### Senior Software Developer — [Carbon Five](https://carbonfive.com/) *(acquired by West Monroe)*
 *Sep 2018 – Dec 2020*
@@ -65,6 +60,6 @@ title: Stephen Beck
 
 ## Skills
 
-Rust, R, TypeScript, JavaScript, Node.js, React, SQL (Postgres, MySQL), NixOS/Linux, Angular, Clojure, Kotlin, GraphQL, Docker, Kubernetes (EKS), Terraform, AWS (Lambda, RDS, EKS), Ansible, OpenAPI, Tailwind
+Rust, R, TypeScript, JavaScript, Node.js, React, SQL (Postgres, MySQL), NixOS/Linux, Angular, Clojure, Kotlin, GraphQL, Docker, Kubernetes (EKS), Terraform, AWS (Lambda, RDS), Ansible, OpenAPI, Tailwind
 
 #page
