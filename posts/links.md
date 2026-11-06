@@ -12,8 +12,10 @@
 ### Tools I enjoy
 - [NixOS](https://nixos.org/)
 - [neovim](https://neovim.io/)
+- [tmux](https://neovim.io/)
 - [jj](https://www.jj-vcs.dev/)
 - [niri](https://github.com/YaLTeR/niri?tab=readme-ov-file#niri)
+- [zen browser](https://zen-browser.app/)
 
 ### Greek & Latin
 - [Laudator Temporis Acti](https://laudatortemporisacti.blogspot.com/)

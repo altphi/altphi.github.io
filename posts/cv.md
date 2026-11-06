@@ -16,7 +16,7 @@ title: Stephen Beck
 
 - Built adaptive testing (CAT) engine in Rust using IRT data, shadow-testing and MIP solvers for constraint-based optimization.
 - Served as sole systems developer (SRE, backend, frontend) and CTO through major growth phase; now principal engineer/architect for team of 10.
-- Primary code reviewer and architect of shared frameworks. Set the coding standards and the automated checks that hold incoming changes to them (tests, lint, CI, and Jev for classification according to those standards).
+- Primary code reviewer and architect of shared frameworks. Set the coding standards and the automated checks that hold incoming changes to them (tests, lint, CI, Semgrep and Jev).
 - Set the team's testing practice: some tests before, when they shape the design; some after, to pin behavior; a broader suite for errors in incoming changes.
 - Replaced PHP monolith with modern Node + React (both TypeScript).
 - Designed the UX for the lower-grade platform (CLT3-8), launched in 2024.
